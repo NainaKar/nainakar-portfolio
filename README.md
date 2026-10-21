@@ -37,12 +37,9 @@ Welcome to the official repository for my personal portfolio website. This proje
 │       ├── security_project.jpg     # Secure login system preview
 │       ├── aiml_project.jpg         # Password strength analyzer preview
 │       └── restaurant.jpg           # Restaurant website preview
-├── css/
-│   └── style.css                    # Complete responsive design system
-├── js/
-│   ├── main.js                      # Core interactivity, nav, preloader & modal
-│   └── 3d_background.js             # Three.js starry canvas & GSAP animations
 ├── index.html                       # Main portfolio landing page
+├── style.css                        # Complete responsive design system
+├── script.js                        # Three.js 3D cosmos, GSAP animations & interactivity
 ├── server.js                        # Zero-dependency local Node.js server
 ├── package.json                     # NPM start scripts
 └── README.md                        # Documentation
