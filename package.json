@@ -1,0 +1,13 @@
+{
+  "name": "naina-kar-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website of Naina Kar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["portfolio", "naina-kar"],
+  "author": "Naina Kar",
+  "license": "ISC"
+}
