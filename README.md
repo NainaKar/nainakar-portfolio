@@ -23,7 +23,7 @@ Welcome to the official repository for my personal portfolio website. This proje
 ## 🛠️ Tech Stack
 - **Frontend**: HTML5, CSS3 (Custom Glassmorphism), Vanilla JavaScript (ES6+), React.js
 - **Animations & 3D**: Three.js, GSAP & ScrollTrigger
-- **Icons & Typography**: FontAwesome 6, Devicon, Google Fonts (Outfit, Plus Jakarta Sans, JetBrains Mono)
+- **Icons & Typography**: self-hosted in `assets/icons/` — brand logos from Devicon (MIT) and Simple Icons (CC0), UI icons from Lucide (ISC, inlined as an SVG sprite); Google Fonts (Inter, Outfit, Plus Jakarta Sans, JetBrains Mono)
 - **Local Server**: Node.js HTTP server (`server.js`)
 
 ---
@@ -31,12 +31,14 @@ Welcome to the official repository for my personal portfolio website. This proje
 ## 📂 Project Structure
 ```text
 ├── assets/
-│   └── images/
-│       ├── naina_professional.jpg   # Main professional portrait
-│       ├── jobsphere.jpg            # JobSphere project preview
-│       ├── security_project.jpg     # Secure login system preview
-│       ├── aiml_project.jpg         # Password strength analyzer preview
-│       └── restaurant.jpg           # Restaurant website preview
+│   ├── images/
+│   │   ├── naina_professional.jpg   # Main professional portrait
+│   │   ├── jobsphere.jpg            # JobSphere project preview
+│   │   ├── security_project.jpg     # Secure login system preview
+│   │   ├── aiml_project.jpg         # Password strength analyzer preview
+│   │   └── restaurant.jpg           # Restaurant website preview
+│   ├── fonts/                       # Self-hosted fonts
+│   └── icons/                       # Icons
 ├── index.html                       # Main portfolio landing page
 ├── style.css                        # Complete responsive design system
 ├── script.js                        # Three.js 3D cosmos, GSAP animations & interactivity

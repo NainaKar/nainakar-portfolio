@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naina Kar | Full Stack Software Engineer & Web Developer</title>
-  
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="Portfolio of Naina Kar - MCA Scholar, Full Stack Web Developer & Software Engineer specializing in Java, Spring Boot, Angular, React.js, Cybersecurity and Machine Learning.">
   <meta name="keywords" content="Naina Kar, Web Developer, Full Stack Developer, Java, Spring Boot, Angular, React, Cybersecurity, Rooman Technologies, JobSphere, Portfolio">
   <meta name="author" content="Naina Kar">
-  
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Naina Kar | Full Stack Software Engineer">
@@ -19,22 +19,40 @@
   <!-- Favicon (Inline Berry SVG) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%23881144'/><text x='50%' y='63%' font-size='48' font-weight='900' fill='%23fff' text-anchor='middle' font-family='sans-serif'>NK</text></svg>">
 
-  <!-- FontAwesome 6 & Devicon CDNs -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <!-- Custom Stylesheet -->
+  <!-- Custom Stylesheet (icons and logos are self-hosted in assets/icons) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Scroll Progress Bar -->
-  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
-
-  <!-- Ambient Glowing Background Orbs -->
-  <div class="ambient-orb ambient-orb-1"></div>
-  <div class="ambient-orb ambient-orb-2"></div>
-  <div class="ambient-orb ambient-orb-3"></div>
+  <!-- UI icons: Lucide (ISC), source files in assets/icons/ui -->
+  <svg class="icon-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7" /><path d="M12 19V5" /></symbol>
+    <symbol id="i-boxes" viewBox="0 0 24 24"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /><path d="m7 16.5-4.74-2.85" /><path d="m7 16.5 5-3" /><path d="M7 16.5v5.17" /><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /><path d="m17 16.5-5-3" /><path d="m17 16.5 4.74-2.85" /><path d="M17 16.5v5.17" /><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /><path d="M12 8 7.26 5.15" /><path d="m12 8 4.74-2.85" /><path d="M12 13.5V8" /></symbol>
+    <symbol id="i-brain-circuit" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" /><path d="M9 13a4.5 4.5 0 0 0 3-4" /><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" /><path d="M3.477 10.896a4 4 0 0 1 .585-.396" /><path d="M6 18a4 4 0 0 1-1.967-.516" /><path d="M12 13h4" /><path d="M12 18h6a2 2 0 0 1 2 2v1" /><path d="M12 8h8" /><path d="M16 8V5a2 2 0 0 1 2-2" /><circle cx="16" cy="13" r=".5" /><circle cx="18" cy="3" r=".5" /><circle cx="20" cy="21" r=".5" /><circle cx="20" cy="8" r=".5" /></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+    <symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" /></symbol>
+    <symbol id="i-code-xml" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4" /><path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" /></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2" /><rect width="6" height="6" x="9" y="9" rx="1" /><path d="M15 2v2" /><path d="M15 20v2" /><path d="M2 15h2" /><path d="M2 9h2" /><path d="M20 15h2" /><path d="M20 9h2" /><path d="M9 2v2" /><path d="M9 20v2" /></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3" /><path d="M3 5V19A9 3 0 0 0 21 19V5" /><path d="M3 12A9 3 0 0 0 21 12" /></symbol>
+    <symbol id="i-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /><path d="M10 9H8" /><path d="M16 13H8" /><path d="M16 17H8" /></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" /></symbol>
+    <symbol id="i-git-branch" viewBox="0 0 24 24"><line x1="6" x2="6" y1="3" y2="15" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" /></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" /><path d="M9 18c-4.51 2-5-2-7-2" /></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></symbol>
+    <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1" /><rect x="2" y="16" width="6" height="6" rx="1" /><rect x="9" y="2" width="6" height="6" rx="1" /><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" /><path d="M12 12V8" /></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" /><rect x="6" y="14" width="12" height="8" rx="1" /></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2" ry="2" /><rect width="20" height="8" x="2" y="14" rx="2" ry="2" /><line x1="6" x2="6.01" y1="6" y2="6" /><line x1="6" x2="6.01" y1="18" y2="18" /></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></symbol>
+    <symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></symbol>
+  </svg>
 
   <!-- Background Three.js Starry Canvas -->
   <div class="background-container">
@@ -69,66 +87,39 @@
     </div>
   </div>
 
-  <!-- Top Site Header (Sawad Style) -->
-  <header class="top-header">
-    <a href="#home" class="top-brand">
-      <div class="brand-badge">NK</div>
-      <span>Naina<span class="brand-dot">.</span>Kar</span>
-    </a>
-    <div class="sawad-status-pill">
-      <span class="status-dot-pulse"></span>
-      <span>Available for Software & Web Roles</span>
-    </div>
-    <div class="top-actions">
-      <button class="btn-secondary btn-sm btn-view-resume">
-        <i class="fa-regular fa-file-lines"></i>
-        <span>Resume</span>
-      </button>
-      <a href="#contact" class="btn-primary btn-sm">
-        <span>Let's Talk</span>
-        <i class="fa-solid fa-arrow-right"></i>
+  <!-- ── SITE HEADER: BREADCRUMB + SECTION LINKS (APPLE LOCAL NAV) ── -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-header-inner">
+      <a href="#home" class="nav-brand" aria-label="Naina Kar, back to top">
+        <span class="brand-badge">NK</span>
       </a>
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="#home">Naina Kar</a></li>
+          <li class="crumb-mid"><a href="#home">Portfolio</a></li>
+          <li><span aria-current="location" id="crumbCurrent">Home</span></li>
+        </ol>
+      </nav>
+
+      <nav class="nav-links" id="navLinks" aria-label="Sections">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#education" class="nav-link" data-section="education">Milestones</a>
+        <a href="#profiles" class="nav-link" data-section="profiles">Profiles</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Show sections">
+          <svg class="ico"><use href="#i-chevron-down"/></svg>
+        </button>
+        <button class="btn-pill btn-pill-sm btn-view-resume">Resume</button>
+      </div>
     </div>
   </header>
-
-  <!-- Floating Pill Navbar (Aakarsh Style) -->
-  <nav class="site-nav" id="siteNav">
-    <div class="nav-pill">
-      <span class="nav-indicator" id="navIndicator"></span>
-      <a href="#home" class="nav-link active" data-section="home">
-        <i class="fa-solid fa-house nav-icon"></i>
-        <span class="nav-label">Home</span>
-      </a>
-      <a href="#about" class="nav-link" data-section="about">
-        <i class="fa-solid fa-user nav-icon"></i>
-        <span class="nav-label">About</span>
-      </a>
-      <a href="#experience" class="nav-link" data-section="experience">
-        <i class="fa-solid fa-briefcase nav-icon"></i>
-        <span class="nav-label">Experience</span>
-      </a>
-      <a href="#projects" class="nav-link" data-section="projects">
-        <i class="fa-solid fa-code nav-icon"></i>
-        <span class="nav-label">Projects</span>
-      </a>
-      <a href="#skills" class="nav-link" data-section="skills">
-        <i class="fa-solid fa-layer-group nav-icon"></i>
-        <span class="nav-label">Skills</span>
-      </a>
-      <a href="#education" class="nav-link" data-section="education">
-        <i class="fa-solid fa-graduation-cap nav-icon"></i>
-        <span class="nav-label">Milestones</span>
-      </a>
-      <a href="#profiles" class="nav-link" data-section="profiles">
-        <i class="fa-solid fa-globe nav-icon"></i>
-        <span class="nav-label">Profiles</span>
-      </a>
-      <a href="#contact" class="nav-link" data-section="contact">
-        <i class="fa-solid fa-envelope nav-icon"></i>
-        <span class="nav-label">Contact</span>
-      </a>
-    </div>
-  </nav>
 
   <!-- ══════════════════════════════════════════════════════════════
        HERO SECTION — SAWAD FRAMER STYLE
@@ -154,7 +145,7 @@
 
           <!-- Glowing Flame/Spark Badge -->
           <div class="card-spark-badge">
-            <i class="fa-solid fa-fire-flame-curved"></i>
+            <svg class="ico"><use href="#i-flame"/></svg>
           </div>
 
           <!-- Bio Tagline -->
@@ -164,10 +155,10 @@
 
           <!-- Social Icons Row -->
           <div class="card-social-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:nainakar2000@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#projects" aria-label="Projects"><i class="fa-solid fa-code"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"/></svg></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ico"><use href="#i-github"/></svg></a>
+            <a href="mailto:nainakar2000@gmail.com" aria-label="Email"><svg class="ico"><use href="#i-mail"/></svg></a>
+            <a href="#projects" aria-label="Projects"><svg class="ico"><use href="#i-code-xml"/></svg></a>
           </div>
         </div>
       </div>
@@ -203,14 +194,14 @@
         <div class="sawad-cta-row">
           <a href="#projects" class="btn-primary" id="heroExploreBtn">
             <span>Explore My Work</span>
-            <i class="fa-solid fa-arrow-right-long"></i>
+            <svg class="ico"><use href="#i-arrow-right"/></svg>
           </a>
           <button class="btn-secondary btn-view-resume" id="heroResumeBtn">
-            <i class="fa-regular fa-file-lines"></i>
+            <svg class="ico"><use href="#i-file-text"/></svg>
             <span>View Resume</span>
           </button>
           <a href="#contact" class="btn-secondary">
-            <i class="fa-solid fa-paper-plane"></i>
+            <svg class="ico"><use href="#i-send"/></svg>
             <span>Let's Talk</span>
           </a>
         </div>
@@ -219,650 +210,533 @@
     </div>
   </main>
 
-  <!-- Infinite Marquee Ticker Tape (Sawad Signature) -->
-  <section class="sawad-marquee-section">
+  <!-- ── TECHNOLOGY LOGO RAIL ── -->
+  <section class="logo-rail" aria-label="Technologies I work with">
     <div class="marquee-track">
-      <div class="marquee-content">
-        <span class="marquee-item">JAVA & SPRING BOOT <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">ANGULAR 18 <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">REACT.JS <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">RESTFUL APIS <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">CYBERSECURITY <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">MACHINE LEARNING <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">MYSQL & SQL <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">CLEAN ARCHITECTURE <span class="marquee-star">✦</span></span>
-      </div>
-      <div class="marquee-content" aria-hidden="true">
-        <span class="marquee-item">JAVA & SPRING BOOT <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">ANGULAR 18 <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">REACT.JS <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">RESTFUL APIS <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">CYBERSECURITY <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">MACHINE LEARNING <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">MYSQL & SQL <span class="marquee-star">✦</span></span>
-        <span class="marquee-item">CLEAN ARCHITECTURE <span class="marquee-star">✦</span></span>
-      </div>
+      <ul class="marquee-content">
+        <li class="rail-item"><img src="assets/icons/tech/java.svg" alt="">Java</li>
+        <li class="rail-item"><img src="assets/icons/tech/spring.svg" alt="">Spring Boot</li>
+        <li class="rail-item"><img src="assets/icons/tech/react.svg" alt="">React</li>
+        <li class="rail-item"><img src="assets/icons/tech/angular.svg" alt="">Angular</li>
+        <li class="rail-item"><img src="assets/icons/tech/typescript.svg" alt="">TypeScript</li>
+        <li class="rail-item"><img src="assets/icons/tech/javascript.svg" alt="">JavaScript</li>
+        <li class="rail-item"><img src="assets/icons/tech/python.svg" alt="">Python</li>
+        <li class="rail-item"><img src="assets/icons/tech/scikitlearn.svg" alt="">scikit-learn</li>
+        <li class="rail-item"><img src="assets/icons/tech/numpy.svg" alt="">NumPy</li>
+        <li class="rail-item"><img src="assets/icons/tech/pandas.svg" alt="">pandas</li>
+        <li class="rail-item"><img src="assets/icons/tech/mysql.svg" alt="">MySQL</li>
+        <li class="rail-item"><img src="assets/icons/tech/mongodb.svg" alt="">MongoDB</li>
+        <li class="rail-item"><img src="assets/icons/tech/git.svg" alt="">Git</li>
+        <li class="rail-item"><img src="assets/icons/tech/figma.svg" alt="">Figma</li>
+      </ul>
+      <ul class="marquee-content" aria-hidden="true">
+        <li class="rail-item"><img src="assets/icons/tech/java.svg" alt="">Java</li>
+        <li class="rail-item"><img src="assets/icons/tech/spring.svg" alt="">Spring Boot</li>
+        <li class="rail-item"><img src="assets/icons/tech/react.svg" alt="">React</li>
+        <li class="rail-item"><img src="assets/icons/tech/angular.svg" alt="">Angular</li>
+        <li class="rail-item"><img src="assets/icons/tech/typescript.svg" alt="">TypeScript</li>
+        <li class="rail-item"><img src="assets/icons/tech/javascript.svg" alt="">JavaScript</li>
+        <li class="rail-item"><img src="assets/icons/tech/python.svg" alt="">Python</li>
+        <li class="rail-item"><img src="assets/icons/tech/scikitlearn.svg" alt="">scikit-learn</li>
+        <li class="rail-item"><img src="assets/icons/tech/numpy.svg" alt="">NumPy</li>
+        <li class="rail-item"><img src="assets/icons/tech/pandas.svg" alt="">pandas</li>
+        <li class="rail-item"><img src="assets/icons/tech/mysql.svg" alt="">MySQL</li>
+        <li class="rail-item"><img src="assets/icons/tech/mongodb.svg" alt="">MongoDB</li>
+        <li class="rail-item"><img src="assets/icons/tech/git.svg" alt="">Git</li>
+        <li class="rail-item"><img src="assets/icons/tech/figma.svg" alt="">Figma</li>
+      </ul>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════════════════════════
-       MAIN CONTENT — AAKARSH STYLE ARCHITECTURE
-       About, Experience, Projects, Skills, Milestones, Profiles, Contact
+       MAIN CONTENT — APPLE-STYLE FULL-BLEED TILES
+       Light and dark tiles alternate; the colour change is the divider.
        ══════════════════════════════════════════════════════════════ -->
   <div class="main-content">
 
-    <!-- ── 1. ABOUT ME SECTION ── -->
-    <section class="section-wrapper about-section" id="about">
-      <h2 class="section-title">About Me - <span class="purple-text">Behind The Code!</span></h2>
-      <p class="section-subtitle-text">Bridging software architecture, cybersecurity principles, and intuitive user experiences.</p>
+    <!-- ── 1. ABOUT: BENTO GRID (LIGHT) ── -->
+    <section class="tile tile-light" id="about">
+      <div class="tile-inner">
+        <header class="tile-head" data-reveal>
+          <h2 class="tile-title">Behind the code.</h2>
+          <p class="tile-lead">Bridging software architecture, cybersecurity principles and intuitive user experiences.</p>
+        </header>
 
-      <div class="glass-card about-glass-card">
-        <div class="about-quote-box">
-          "Technology empowers us to translate intricate challenges into elegant, resilient, and human-centric software solutions."
-        </div>
-
-        <p class="about-body-text">
-          I am a <strong>Junior Software Developer</strong> and <strong>MCA Student (2025–27)</strong> at the College of IT Management and Education (SGPA: 8.83), with a Bachelor of Science in Information Technology from Centurion University of Technology and Management (CGPA: 8.33). 
-          I have hands-on project experience building full-stack applications with <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>React.js</strong>, <strong>MySQL</strong>, and <strong>REST APIs</strong>, grounded in strong <strong>OOP</strong>, <strong>DBMS</strong>, and secure coding practices. 
-          To continuously broaden my capabilities, I am expanding my frontend engineering with <strong>Angular</strong> and <strong>TypeScript</strong>.
-        </p>
-
-        <!-- Personal Info Chips (Exact from Resume) -->
-        <div class="about-chips-grid">
-          <div class="info-chip">
-            <div class="chip-icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div class="chip-details">
-              <span class="chip-label">MCA (2025 – 2027)</span>
-              <span class="chip-val">CIME | SGPA: 8.83</span>
+        <div class="bento">
+          <article class="bento-card bento-story" data-reveal>
+            <blockquote class="bento-quote">“Technology empowers us to translate intricate challenges into elegant, resilient and human-centric software.”</blockquote>
+            <p>
+              I am a <strong>Junior Software Developer</strong> and <strong>MCA student (2025–27)</strong> at the College of IT Management and Education, with a B.Sc in Information Technology from Centurion University of Technology and Management.
+              I build full-stack applications with <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>React.js</strong>, <strong>MySQL</strong> and <strong>REST APIs</strong>, grounded in OOP, DBMS and secure coding practices — and I am expanding my frontend work with <strong>Angular</strong> and <strong>TypeScript</strong>.
+            </p>
+            <div class="bento-actions">
+              <button class="btn-pill btn-view-resume">View full CV</button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-link">LinkedIn <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
             </div>
-          </div>
-          <div class="info-chip">
-            <div class="chip-icon-circle"><i class="fa-solid fa-university"></i></div>
-            <div class="chip-details">
-              <span class="chip-label">B.Sc IT (2022 – 2025)</span>
-              <span class="chip-val">Centurion Univ | CGPA: 8.33</span>
-            </div>
-          </div>
-          <div class="info-chip">
-            <div class="chip-icon-circle"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="chip-details">
-              <span class="chip-label">Location</span>
-              <span class="chip-val">Soro, Balasore, Odisha, India</span>
-            </div>
-          </div>
-          <div class="info-chip">
-            <div class="chip-icon-circle"><i class="fa-solid fa-envelope"></i></div>
-            <div class="chip-details">
-              <span class="chip-label">Email & Phone</span>
-              <span class="chip-val">nainakar2000@gmail.com</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- 4 Core Pillars from Resume -->
-        <div class="pillars-grid">
-          <div class="pillar-item">
-            <div class="pillar-icon-box">☕</div>
-            <h3 class="pillar-title">Java & Spring Boot</h3>
-            <p class="pillar-desc">Building robust backend services, modular RESTful APIs, and responsive frontends with React.js and MySQL relational databases.</p>
-          </div>
-          <div class="pillar-item">
-            <div class="pillar-icon-box">🛡️</div>
-            <h3 class="pillar-title">Cybersecurity & Defense</h3>
-            <p class="pillar-desc">Trained at Thiranex Technologies in network security, phishing attack analysis, secure authentication, password hashing, and SQL Injection mitigation.</p>
-          </div>
-          <div class="pillar-item">
-            <div class="pillar-icon-box">🤖</div>
-            <h3 class="pillar-title">Machine Learning (AI/ML)</h3>
-            <p class="pillar-desc">Interned at Skill Forge applying Python, Scikit-learn, Pandas, and NumPy for data preprocessing, phishing email detection, and predictive modeling.</p>
-          </div>
-          <div class="pillar-item">
-            <div class="pillar-icon-box">💻</div>
-            <h3 class="pillar-title">Core Computer Science</h3>
-            <p class="pillar-desc">Solid grounding in Data Structures, Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, and Computer Networks.</p>
-          </div>
-        </div>
+          <figure class="bento-card bento-photo" data-reveal>
+            <img src="assets/images/naina_current.jpg" alt="Naina Kar at her desk beneath a Build, Create, Grow sign" loading="lazy">
+          </figure>
 
-        <div style="display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap;">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-sm">
-            <i class="fa-brands fa-github"></i>
-            <span>GitHub Profile</span>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-sm">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LinkedIn Network</span>
-          </a>
-          <button class="btn-primary btn-sm btn-view-resume">
-            <i class="fa-regular fa-file-lines"></i>
-            <span>Inspect Full CV</span>
-          </button>
+          <div class="bento-card bento-stat" data-reveal>
+            <p class="stat-figure">8.83</p>
+            <p class="stat-caption">MCA SGPA<br><span>CIME · 2025 – 2027</span></p>
+          </div>
+
+          <div class="bento-card bento-stat" data-reveal>
+            <p class="stat-figure">8.33</p>
+            <p class="stat-caption">B.Sc IT CGPA<br><span>Centurion University · 2022 – 2025</span></p>
+          </div>
+
+          <div class="bento-card bento-meta" data-reveal>
+            <p><svg class="ico"><use href="#i-map-pin"/></svg> Soro, Balasore, Odisha, India</p>
+            <p><svg class="ico"><use href="#i-mail"/></svg> <a href="mailto:nainakar2000@gmail.com" class="text-link">nainakar2000@gmail.com</a></p>
+          </div>
+
+          <article class="bento-card bento-pillar" data-reveal>
+            <div class="logo-stack"><img src="assets/icons/tech/java.svg" alt="Java"><img src="assets/icons/tech/spring.svg" alt="Spring Boot"></div>
+            <h3>Java & Spring Boot</h3>
+            <p>Robust backend services, modular RESTful APIs and responsive React.js frontends on MySQL.</p>
+          </article>
+
+          <article class="bento-card bento-pillar" data-reveal>
+            <div class="logo-stack"><span class="glyph"><svg class="ico"><use href="#i-shield-check"/></svg></span></div>
+            <h3>Cybersecurity & Defense</h3>
+            <p>Network security, phishing analysis, secure authentication, password hashing and SQL Injection mitigation.</p>
+          </article>
+
+          <article class="bento-card bento-pillar" data-reveal>
+            <div class="logo-stack"><img src="assets/icons/tech/python.svg" alt="Python"><img src="assets/icons/tech/scikitlearn.svg" alt="scikit-learn"><img src="assets/icons/tech/numpy.svg" alt="NumPy"><img src="assets/icons/tech/pandas.svg" alt="pandas"></div>
+            <h3>Machine Learning</h3>
+            <p>Data preprocessing, phishing email detection and predictive modelling with Python and scikit-learn.</p>
+          </article>
+
+          <article class="bento-card bento-pillar" data-reveal>
+            <div class="logo-stack"><span class="glyph"><svg class="ico"><use href="#i-cpu"/></svg></span></div>
+            <h3>Core Computer Science</h3>
+            <p>Data structures, algorithms, OOP, DBMS, operating systems and computer networks.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ── 2. WORK EXPERIENCE SECTION (AAKARSH TIMELINE) ── -->
-    <section class="section-wrapper" id="experience">
-      <h2 class="section-title">Work Experience - <span class="purple-text">Professional Journey!</span></h2>
-      <p class="section-subtitle-text">Hands-on industry internships spanning full-stack development, cybersecurity, and artificial intelligence.</p>
+    <!-- ── 2. EXPERIENCE: STICKY HEADING + ROLES (BLACK) ── -->
+    <section class="tile tile-dark" id="experience">
+      <div class="tile-inner split">
+        <header class="tile-head split-head" data-reveal>
+          <h2 class="tile-title">Where I’ve worked.</h2>
+          <p class="tile-lead">Hands-on industry internships in cybersecurity and machine learning.</p>
+        </header>
 
-      <div class="timeline">
-        <div class="timeline-line">
-          <div class="timeline-progress"></div>
-        </div>
-
-        <!-- Timeline 01: Thiranex Technologies -->
-        <div class="timeline-item left">
-          <div class="timeline-number">01</div>
-          <div class="timeline-content">
-            <div class="project-tag">Thiranex Technologies</div>
-            <div class="timeline-date">JUN 2026 – JUL 2026</div>
-            <h3>Cyber Security Intern</h3>
-            <ul class="timeline-bullet-list">
+        <div class="role-list">
+          <article class="role" data-reveal>
+            <div class="role-top">
+              <span class="glyph"><svg class="ico"><use href="#i-shield-check"/></svg></span>
+              <p class="role-meta">Thiranex Technologies <span>Jun 2026 – Jul 2026</span></p>
+            </div>
+            <h3 class="role-title">Cyber Security Intern</h3>
+            <ul class="role-points">
               <li>Gained hands-on experience in cybersecurity concepts including network security, phishing attacks, secure authentication, and vulnerability assessment.</li>
               <li>Worked on identifying common web vulnerabilities such as SQL Injection and applied secure coding practices to mitigate security risks.</li>
               <li>Developed security-focused mini projects and documented cybersecurity best practices and threat prevention techniques.</li>
               <li>Strengthened analytical and problem-solving skills through practical exposure to cybersecurity tools and methodologies.</li>
             </ul>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
+          </article>
 
-        <!-- Timeline 02: Skill Forge -->
-        <div class="timeline-item right">
-          <div class="timeline-number">02</div>
-          <div class="timeline-content">
-            <div class="project-tag">Skill Forge</div>
-            <div class="timeline-date">2025</div>
-            <h3>AI/ML Intern</h3>
-            <ul class="timeline-bullet-list">
+          <article class="role" data-reveal>
+            <div class="role-top">
+              <span class="glyph"><svg class="ico"><use href="#i-brain-circuit"/></svg></span>
+              <p class="role-meta">Skill Forge <span>2025</span></p>
+            </div>
+            <h3 class="role-title">AI/ML Intern</h3>
+            <ul class="role-points">
               <li>Worked on machine learning concepts including data preprocessing, model training, and evaluation using Python and Scikit-learn.</li>
               <li>Developed mini projects involving phishing email detection and predictive data analysis.</li>
               <li>Utilized NumPy, Pandas, and Scikit-learn for data manipulation and model development.</li>
             </ul>
-          </div>
-          <div class="timeline-dot"></div>
+            <ul class="tech-list">
+              <li><img src="assets/icons/tech/python.svg" alt="">Python</li>
+              <li><img src="assets/icons/tech/scikitlearn.svg" alt="">scikit-learn</li>
+              <li><img src="assets/icons/tech/numpy.svg" alt="">NumPy</li>
+              <li><img src="assets/icons/tech/pandas.svg" alt="">pandas</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ── 3. PROJECTS SHOWCASE SECTION (AAKARSH EXPERIENCE GRID) ── -->
-    <section class="section-wrapper" id="projects">
-      <h2 class="section-title">Projects Showcase - <span class="purple-text">What I've Built!</span></h2>
-      <p class="section-subtitle-text">Production-ready applications demonstrating full-stack engineering, machine learning, and security resilience.</p>
-
-      <div class="experience-grid">
-
-        <!-- Project 1: Job Sphere -->
-        <div class="experience-card">
-          <div class="experience-date">FULL STACK</div>
-          <div class="project-tag">React.js · Spring Boot · MySQL · REST APIs</div>
-          <div class="project-img-preview">
-            <img src="assets/images/jobsphere.jpg" alt="Job Sphere Portal Preview" loading="lazy">
+    <!-- ── 3. PROJECTS: HORIZONTAL GALLERY (GRAPHITE) ── -->
+    <section class="tile tile-graphite" id="projects">
+      <div class="tile-inner">
+        <header class="tile-head tile-head-row" data-reveal>
+          <div>
+            <h2 class="tile-title">What I’ve built.</h2>
+            <p class="tile-lead">Applications across full-stack engineering, security and web design.</p>
           </div>
-          <h3>Job Sphere</h3>
-          <p>
-            Developed a full stack job portal that enables users to browse job listings, view job details, and manage applied jobs. Built a responsive React.js frontend with reusable components, state management, and REST API integration. Developed backend services using Spring Boot and MySQL for managing job listings, user data, and applications.
-          </p>
-          <div class="tech-tags-list">
-            <span class="tech-tag">React.js</span>
-            <span class="tech-tag">Spring Boot</span>
-            <span class="tech-tag">Java</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">REST APIs</span>
+          <div class="rail-controls">
+            <button class="rail-btn" data-rail="prev" aria-label="Previous projects"><svg class="ico"><use href="#i-arrow-left"/></svg></button>
+            <button class="rail-btn" data-rail="next" aria-label="Next projects"><svg class="ico"><use href="#i-arrow-right"/></svg></button>
           </div>
-          <div class="project-links-wrapper">
-            <a href="javascript:void(0)" class="project-btn"><i class="fa-regular fa-eye"></i> View Live</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-          </div>
-        </div>
-
-        <!-- Project 2: Secure Login System -->
-        <div class="experience-card">
-          <div class="experience-date">CYBERSECURITY</div>
-          <div class="project-tag">Java · SQL · Security</div>
-          <div class="project-img-preview">
-            <img src="assets/images/security_project.jpg" alt="Secure Login System Preview" loading="lazy">
-          </div>
-          <h3>Secure Login System</h3>
-          <p>
-            Built a robust secure authentication system with cryptographic password hashing and rigorous input validation. Implemented proactive defensive measures to eliminate SQL Injection vulnerabilities, sanitize user parameters, and safeguard user account security.
-          </p>
-          <div class="tech-tags-list">
-            <span class="tech-tag">Java</span>
-            <span class="tech-tag">SQL</span>
-            <span class="tech-tag">Password Hashing</span>
-            <span class="tech-tag">Input Validation</span>
-            <span class="tech-tag">SQLi Defense</span>
-          </div>
-          <div class="project-links-wrapper">
-            <a href="javascript:void(0)" class="project-btn"><i class="fa-regular fa-eye"></i> View Live</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-          </div>
-        </div>
-
-        <!-- Project 3: Password Strength Analyzer -->
-        <div class="experience-card">
-          <div class="experience-date">SECURITY UTILITY</div>
-          <div class="project-tag">Java · Rule-Based Engine</div>
-          <div class="project-img-preview">
-            <img src="assets/images/aiml_project.jpg" alt="Password Strength Analyzer Preview" loading="lazy">
-          </div>
-          <h3>Password Strength Analyzer</h3>
-          <p>
-            Developed a Java application to dynamically evaluate password complexity, entropy, and vulnerability based on security standards. Features real-time visual feedback and tailored recommendations to help users generate resilient, uncrackable credentials.
-          </p>
-          <div class="tech-tags-list">
-            <span class="tech-tag">Java</span>
-            <span class="tech-tag">Security Rules</span>
-            <span class="tech-tag">Real-Time Evaluation</span>
-            <span class="tech-tag">Entropy Analysis</span>
-          </div>
-          <div class="project-links-wrapper">
-            <a href="javascript:void(0)" class="project-btn"><i class="fa-regular fa-eye"></i> View Live</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-          </div>
-        </div>
-
-        <!-- Project 4: Portfolio Website -->
-        <div class="experience-card">
-          <div class="experience-date">FRONTEND</div>
-          <div class="project-tag">HTML · CSS · React</div>
-          <div class="project-img-preview" style="background: linear-gradient(135deg, #1f0310, #3d0720); display: flex; align-items: center; justify-content: center;">
-            <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; color: var(--c-rose-glow); text-shadow: 0 0 20px var(--c-raspberry);">NK Portfolio</div>
-          </div>
-          <h3>Portfolio Website</h3>
-          <p>
-            Designed and developed a responsive modern personal portfolio website to showcase engineering projects, internships, and technical skills. Implemented modern UI/UX principles, glassmorphism, fluid animations, and cross-device performance optimization.
-          </p>
-          <div class="tech-tags-list">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Responsive UI</span>
-            <span class="tech-tag">Animations</span>
-          </div>
-          <div class="project-links-wrapper">
-            <a href="#home" class="project-btn"><i class="fa-regular fa-eye"></i> View Live</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-          </div>
-        </div>
-
-        <!-- Project 5: Restaurant Website -->
-        <div class="experience-card">
-          <div class="experience-date">CMS & WEB DESIGN</div>
-          <div class="project-tag">WordPress · Elementor</div>
-          <div class="project-img-preview">
-            <img src="assets/images/restaurant.jpg" alt="Restaurant Website Preview" loading="lazy">
-          </div>
-          <h3>Restaurant Website</h3>
-          <p>
-            Designed a responsive restaurant website concept utilizing WordPress and Elementor. Focused on clean navigation architecture, appetizing visual presentation, interactive menu showcase, and seamless mobile-friendly layouts across devices.
-          </p>
-          <div class="tech-tags-list">
-            <span class="tech-tag">WordPress</span>
-            <span class="tech-tag">Elementor</span>
-            <span class="tech-tag">UI/UX Design</span>
-            <span class="tech-tag">Responsive Layout</span>
-          </div>
-          <div class="project-links-wrapper">
-            <a href="javascript:void(0)" class="project-btn"><i class="fa-regular fa-eye"></i> View Live</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── 4. TECHNICAL SKILLS SECTION (FROM RESUME) ── -->
-    <section class="section-wrapper" id="skills">
-      <h2 class="section-title">Technical Skills - <span class="purple-text">Core Expertise!</span></h2>
-      <p class="section-subtitle-text">Proficiencies across programming languages, web frameworks, databases, and core computer science foundations.</p>
-
-      <div class="skill-filters" id="skillFilters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="languages">Languages</button>
-        <button class="filter-btn" data-filter="frontend">Web & Frontend</button>
-        <button class="filter-btn" data-filter="backend">Backend & APIs</button>
-        <button class="filter-btn" data-filter="databases">Databases</button>
-        <button class="filter-btn" data-filter="tools">Tools & Core CS</button>
-        <button class="filter-btn" data-filter="learning">Learning</button>
+        </header>
       </div>
 
-      <div class="skill-grid" id="skillGrid">
-        <!-- Languages -->
-        <div class="skill-card" data-category="languages">
-          <i class="devicon-java-plain colored"></i>
-          <span>Java</span>
-        </div>
-        <div class="skill-card" data-category="languages">
-          <i class="devicon-python-plain colored"></i>
-          <span>Python</span>
-        </div>
-        <div class="skill-card" data-category="languages">
-          <i class="devicon-c-plain colored"></i>
-          <span>C</span>
-        </div>
-        <div class="skill-card" data-category="languages">
-          <i class="devicon-javascript-plain colored"></i>
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-card" data-category="languages">
-          <i class="devicon-mysql-plain colored"></i>
-          <span>SQL</span>
-        </div>
-
-        <!-- Web & Frontend -->
-        <div class="skill-card" data-category="frontend">
-          <i class="devicon-react-original colored"></i>
-          <span>React.js</span>
-        </div>
-        <div class="skill-card" data-category="frontend">
-          <i class="devicon-html5-plain colored"></i>
-          <span>HTML5</span>
-        </div>
-        <div class="skill-card" data-category="frontend">
-          <i class="devicon-css3-plain colored"></i>
-          <span>CSS3</span>
-        </div>
-        <div class="skill-card" data-category="frontend">
-          <i class="devicon-wordpress-plain" style="color: #21759b;"></i>
-          <span>WordPress</span>
-        </div>
-        <div class="skill-card" data-category="frontend">
-          <i class="devicon-bootstrap-plain colored"></i>
-          <span>Bootstrap</span>
-        </div>
-        <div class="skill-card" data-category="frontend">
-          <i class="devicon-figma-plain colored"></i>
-          <span>Figma</span>
-        </div>
-        <div class="skill-card" data-category="frontend">
-          <i class="fa-solid fa-mobile-screen-button" style="color: #e24366;"></i>
-          <span>Responsive UI</span>
-        </div>
-
-        <!-- Backend & APIs -->
-        <div class="skill-card" data-category="backend">
-          <i class="devicon-spring-original colored"></i>
-          <span>Spring Boot</span>
-        </div>
-        <div class="skill-card" data-category="backend">
-          <i class="fa-solid fa-network-wired" style="color: #ff69b4;"></i>
-          <span>REST APIs</span>
-        </div>
-        <div class="skill-card" data-category="backend">
-          <i class="devicon-java-plain" style="color: #f89820;"></i>
-          <span>Java Backend</span>
-        </div>
-
-        <!-- Databases -->
-        <div class="skill-card" data-category="databases">
-          <i class="devicon-mysql-plain colored"></i>
-          <span>MySQL</span>
-        </div>
-        <div class="skill-card" data-category="databases">
-          <i class="devicon-mongodb-plain colored"></i>
-          <span>MongoDB</span>
-        </div>
-
-        <!-- Tools & Core CS -->
-        <div class="skill-card" data-category="tools">
-          <i class="devicon-git-plain colored"></i>
-          <span>Git</span>
-        </div>
-        <div class="skill-card" data-category="tools">
-          <i class="devicon-github-original" style="color: #fff;"></i>
-          <span>GitHub</span>
-        </div>
-        <div class="skill-card" data-category="tools">
-          <i class="devicon-vscode-plain colored"></i>
-          <span>VS Code</span>
-        </div>
-        <div class="skill-card" data-category="tools">
-          <i class="fa-solid fa-diagram-project" style="color: #e24366;"></i>
-          <span>DSA</span>
-        </div>
-        <div class="skill-card" data-category="tools">
-          <i class="fa-solid fa-cubes" style="color: #38bdf8;"></i>
-          <span>OOP</span>
-        </div>
-        <div class="skill-card" data-category="tools">
-          <i class="fa-solid fa-database" style="color: #10b981;"></i>
-          <span>DBMS</span>
-        </div>
-        <div class="skill-card" data-category="tools">
-          <i class="fa-solid fa-server" style="color: #a855f7;"></i>
-          <span>OS & Networks</span>
-        </div>
-
-        <!-- Currently Learning -->
-        <div class="skill-card" data-category="learning">
-          <i class="devicon-angular-plain colored"></i>
-          <span>Angular</span>
-        </div>
-        <div class="skill-card" data-category="learning">
-          <i class="devicon-typescript-plain colored"></i>
-          <span>TypeScript</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 5. EDUCATION & CERTIFICATIONS SECTION ── -->
-    <section class="section-wrapper" id="education">
-      <h2 class="section-title">Milestones - <span class="purple-text">Education & Certs!</span></h2>
-      <p class="section-subtitle-text">Academic excellence combined with verified industry credentials and continuous learning.</p>
-
-      <!-- Certifications Grid (from Resume) -->
-      <div class="cert-grid">
-        <div class="cert-item">
-          <div class="cert-img-wrapper">
-            <div class="cert-badge-visual"><i class="fa-solid fa-user-shield"></i></div>
-            <div class="cert-overlay">
-              <a href="javascript:void(0)" class="cert-overlay-link btn-view-resume">
-                <span>View Credentials</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+      <div class="project-rail" id="projectRail" tabindex="0" aria-label="Projects, scroll sideways">
+        <article class="project-card">
+          <div class="project-media"><img src="assets/images/jobsphere.jpg" alt="Job Sphere recruiter dashboard" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-kind">Full stack</p>
+            <h3>Job Sphere</h3>
+            <p>A job portal to browse listings, view details and manage applications. Reusable React components with state management, backed by Spring Boot REST services on MySQL.</p>
+            <ul class="tech-list">
+              <li><img src="assets/icons/tech/react.svg" alt="">React</li>
+              <li><img src="assets/icons/tech/spring.svg" alt="">Spring Boot</li>
+              <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
+              <li><img src="assets/icons/tech/mysql.svg" alt="">MySQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
             </div>
           </div>
-          <div class="cert-info">
-            <div class="project-tag">2026</div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"><img src="assets/images/security_project.jpg" alt="Secure login system dashboard" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-kind">Cybersecurity</p>
+            <h3>Secure Login System</h3>
+            <p>Authentication with cryptographic password hashing and strict input validation, built to shut out SQL Injection and safeguard user accounts.</p>
+            <ul class="tech-list">
+              <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
+              <li><img src="assets/icons/tech/mysql.svg" alt="">SQL</li>
+              <li><span class="glyph glyph-sm"><svg class="ico"><use href="#i-shield-check"/></svg></span>Hashing</li>
+            </ul>
+            <div class="project-links">
+              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"><img src="assets/images/aiml_project.jpg" alt="Password strength analyzer interface" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-kind">Security utility</p>
+            <h3>Password Strength Analyzer</h3>
+            <p>A Java application that scores password complexity and entropy against security rules, with real-time feedback and tailored recommendations.</p>
+            <ul class="tech-list">
+              <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
+              <li><span class="glyph glyph-sm"><svg class="ico"><use href="#i-shield-check"/></svg></span>Entropy rules</li>
+            </ul>
+            <div class="project-links">
+              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"><img src="assets/images/portfolio.jpg" alt="This portfolio's opening screen" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-kind">Frontend</p>
+            <h3>Portfolio Website</h3>
+            <p>This site: a responsive personal portfolio presenting projects, internships and skills, with fluid animation and cross-device performance.</p>
+            <ul class="tech-list">
+              <li><img src="assets/icons/tech/html5.svg" alt="">HTML5</li>
+              <li><img src="assets/icons/tech/css3.svg" alt="">CSS3</li>
+              <li><img src="assets/icons/tech/javascript.svg" alt="">JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#home" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"><img src="assets/images/restaurant.jpg" alt="Restaurant website shown on a laptop" loading="lazy"></div>
+          <div class="project-body">
+            <p class="project-kind">CMS & web design</p>
+            <h3>Restaurant Website</h3>
+            <p>A restaurant site concept in WordPress and Elementor: clean navigation, an appetising menu showcase and mobile-friendly layouts.</p>
+            <ul class="tech-list">
+              <li><img src="assets/icons/tech/wordpress.svg" alt="">WordPress</li>
+              <li><img src="assets/icons/tech/figma.svg" alt="">UI/UX</li>
+            </ul>
+            <div class="project-links">
+              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── 4. SKILLS: SEGMENTED FILTER + LOGO TILES (LIGHT) ── -->
+    <section class="tile tile-light" id="skills">
+      <div class="tile-inner">
+        <header class="tile-head" data-reveal>
+          <h2 class="tile-title">The toolkit.</h2>
+          <p class="tile-lead">Languages, frameworks, databases and the computer science underneath them.</p>
+        </header>
+
+        <div class="skill-filters" id="skillFilters" role="group" aria-label="Filter skills" data-reveal>
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="languages" aria-pressed="false">Languages</button>
+          <button class="filter-btn" data-filter="frontend" aria-pressed="false">Web & Frontend</button>
+          <button class="filter-btn" data-filter="backend" aria-pressed="false">Backend & APIs</button>
+          <button class="filter-btn" data-filter="ml" aria-pressed="false">Machine Learning</button>
+          <button class="filter-btn" data-filter="databases" aria-pressed="false">Databases</button>
+          <button class="filter-btn" data-filter="tools" aria-pressed="false">Tools & Core CS</button>
+          <button class="filter-btn" data-filter="learning" aria-pressed="false">Learning</button>
+        </div>
+
+        <div class="skill-grid" id="skillGrid" data-reveal>
+          <!-- Languages -->
+          <div class="skill-card" data-category="languages"><img src="assets/icons/tech/java.svg" alt=""><span>Java</span></div>
+          <div class="skill-card" data-category="languages"><img src="assets/icons/tech/python.svg" alt=""><span>Python</span></div>
+          <div class="skill-card" data-category="languages"><img src="assets/icons/tech/c.svg" alt=""><span>C</span></div>
+          <div class="skill-card" data-category="languages"><img src="assets/icons/tech/javascript.svg" alt=""><span>JavaScript</span></div>
+          <div class="skill-card" data-category="languages"><img src="assets/icons/tech/mysql.svg" alt=""><span>SQL</span></div>
+
+          <!-- Web & Frontend -->
+          <div class="skill-card" data-category="frontend"><img src="assets/icons/tech/react.svg" alt=""><span>React.js</span></div>
+          <div class="skill-card" data-category="frontend"><img src="assets/icons/tech/html5.svg" alt=""><span>HTML5</span></div>
+          <div class="skill-card" data-category="frontend"><img src="assets/icons/tech/css3.svg" alt=""><span>CSS3</span></div>
+          <div class="skill-card" data-category="frontend"><img src="assets/icons/tech/wordpress.svg" alt=""><span>WordPress</span></div>
+          <div class="skill-card" data-category="frontend"><img src="assets/icons/tech/bootstrap.svg" alt=""><span>Bootstrap</span></div>
+          <div class="skill-card" data-category="frontend"><img src="assets/icons/tech/figma.svg" alt=""><span>Figma</span></div>
+          <div class="skill-card" data-category="frontend"><span class="glyph"><svg class="ico"><use href="#i-smartphone"/></svg></span><span>Responsive UI</span></div>
+
+          <!-- Backend & APIs -->
+          <div class="skill-card" data-category="backend"><img src="assets/icons/tech/spring.svg" alt=""><span>Spring Boot</span></div>
+          <div class="skill-card" data-category="backend"><span class="glyph"><svg class="ico"><use href="#i-network"/></svg></span><span>REST APIs</span></div>
+          <div class="skill-card" data-category="backend"><img src="assets/icons/tech/java.svg" alt=""><span>Java Backend</span></div>
+
+          <!-- Machine Learning -->
+          <div class="skill-card" data-category="ml"><img src="assets/icons/tech/python.svg" alt=""><span>Python for ML</span></div>
+          <div class="skill-card" data-category="ml"><img src="assets/icons/tech/scikitlearn.svg" alt=""><span>scikit-learn</span></div>
+          <div class="skill-card" data-category="ml"><img src="assets/icons/tech/numpy.svg" alt=""><span>NumPy</span></div>
+          <div class="skill-card" data-category="ml"><img src="assets/icons/tech/pandas.svg" alt=""><span>pandas</span></div>
+
+          <!-- Databases -->
+          <div class="skill-card" data-category="databases"><img src="assets/icons/tech/mysql.svg" alt=""><span>MySQL</span></div>
+          <div class="skill-card" data-category="databases"><img src="assets/icons/tech/mongodb.svg" alt=""><span>MongoDB</span></div>
+
+          <!-- Tools & Core CS -->
+          <div class="skill-card" data-category="tools"><img src="assets/icons/tech/git.svg" alt=""><span>Git</span></div>
+          <div class="skill-card" data-category="tools"><img src="assets/icons/tech/github.svg" alt=""><span>GitHub</span></div>
+          <div class="skill-card" data-category="tools"><img src="assets/icons/tech/vscode.svg" alt=""><span>VS Code</span></div>
+          <div class="skill-card" data-category="tools"><span class="glyph"><svg class="ico"><use href="#i-git-branch"/></svg></span><span>DSA</span></div>
+          <div class="skill-card" data-category="tools"><span class="glyph"><svg class="ico"><use href="#i-boxes"/></svg></span><span>OOP</span></div>
+          <div class="skill-card" data-category="tools"><span class="glyph"><svg class="ico"><use href="#i-database"/></svg></span><span>DBMS</span></div>
+          <div class="skill-card" data-category="tools"><span class="glyph"><svg class="ico"><use href="#i-server"/></svg></span><span>OS & Networks</span></div>
+
+          <!-- Currently Learning -->
+          <div class="skill-card" data-category="learning"><img src="assets/icons/tech/angular.svg" alt=""><span>Angular</span></div>
+          <div class="skill-card" data-category="learning"><img src="assets/icons/tech/typescript.svg" alt=""><span>TypeScript</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5. MILESTONES: CERTIFICATES + EDUCATION SPEC LIST (BLACK) ── -->
+    <section class="tile tile-dark" id="education">
+      <div class="tile-inner">
+        <header class="tile-head" data-reveal>
+          <h2 class="tile-title">Milestones.</h2>
+          <p class="tile-lead">Academic results alongside verified industry credentials.</p>
+        </header>
+
+        <div class="cert-pair">
+          <article class="cert-card" data-reveal>
+            <span class="glyph glyph-lg"><svg class="ico"><use href="#i-shield-check"/></svg></span>
+            <p class="cert-year">2026 · Thiranex Technologies</p>
             <h3>Cyber Security Internship Certificate</h3>
-            <p><strong>Thiranex Technologies</strong> — Validated expertise in network security, phishing attack identification, secure authentication, SQL Injection vulnerability mitigation, and defensive coding standards.</p>
-          </div>
-        </div>
+            <p>Network security, phishing attack identification, secure authentication, SQL Injection mitigation and defensive coding standards.</p>
+            <button class="text-link btn-view-resume">View credentials <svg class="ico"><use href="#i-chevron-right"/></svg></button>
+          </article>
 
-        <div class="cert-item">
-          <div class="cert-img-wrapper">
-            <div class="cert-badge-visual"><i class="fa-solid fa-brain"></i></div>
-            <div class="cert-overlay">
-              <a href="javascript:void(0)" class="cert-overlay-link btn-view-resume">
-                <span>View Credentials</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="cert-info">
-            <div class="project-tag">2025</div>
+          <article class="cert-card" data-reveal>
+            <span class="glyph glyph-lg"><svg class="ico"><use href="#i-brain-circuit"/></svg></span>
+            <p class="cert-year">2025 · Skill Forge</p>
             <h3>AI/ML Internship Certificate</h3>
-            <p><strong>Skill Forge</strong> — Verified competency in machine learning lifecycle, data preprocessing, model training, evaluation, and predictive analytics using Python, Scikit-learn, NumPy, and Pandas.</p>
-          </div>
+            <p>The machine learning lifecycle: preprocessing, training, evaluation and predictive analytics with Python, scikit-learn, NumPy and pandas.</p>
+            <button class="text-link btn-view-resume">View credentials <svg class="ico"><use href="#i-chevron-right"/></svg></button>
+          </article>
         </div>
+
+        <ol class="edu-list">
+          <li class="edu-row" data-reveal>
+            <span class="edu-years">2025 – 2027</span>
+            <div class="edu-main">
+              <h3>Master of Computer Applications (MCA)</h3>
+              <p>College of IT Management and Education (CIME), Bhubaneswar</p>
+            </div>
+            <p class="edu-score">8.83<span>SGPA / 10</span></p>
+          </li>
+          <li class="edu-row" data-reveal>
+            <span class="edu-years">2022 – 2025</span>
+            <div class="edu-main">
+              <h3>B.Sc in Information Technology</h3>
+              <p>Centurion University of Technology and Management</p>
+            </div>
+            <p class="edu-score">8.33<span>CGPA / 10</span></p>
+          </li>
+          <li class="edu-row" data-reveal>
+            <span class="edu-years">2021</span>
+            <div class="edu-main">
+              <h3>Intermediate (CHSE)</h3>
+              <p>Shriram Higher Secondary School, Soro, Balasore</p>
+            </div>
+            <p class="edu-score">75%<span>Score</span></p>
+          </li>
+          <li class="edu-row" data-reveal>
+            <span class="edu-years">2019</span>
+            <div class="edu-main">
+              <h3>Matriculation (CBSE)</h3>
+              <p>St. Xavier High School, Soro, Balasore</p>
+            </div>
+            <p class="edu-score">71%<span>Score</span></p>
+          </li>
+        </ol>
       </div>
+    </section>
 
-      <!-- Academic Degrees (Exact from Resume) -->
-      <div class="edu-cards-grid">
-        <div class="edu-card">
-          <span class="edu-badge">2025 – 2027</span>
-          <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
-          <p class="edu-school">College of IT Management and Education (CIME), Bhubaneswar</p>
-          <div class="edu-score">SGPA: 8.83 / 10.0</div>
-        </div>
+    <!-- ── 6. PROFILES: LINK TILES WITH BRAND LOGOS (WHITE) ── -->
+    <section class="tile tile-white" id="profiles">
+      <div class="tile-inner">
+        <header class="tile-head profile-head" data-reveal>
+          <img src="assets/images/naina_professional.jpg" alt="" class="profile-avatar">
+          <div>
+            <h2 class="tile-title">Find me online.</h2>
+            <p class="tile-lead">@nainakar across developer networks and professional communities.</p>
+          </div>
+        </header>
 
-        <div class="edu-card">
-          <span class="edu-badge">2022 – 2025</span>
-          <h3 class="edu-degree">Bachelor of Science in Information Technology (B.Sc IT)</h3>
-          <p class="edu-school">Centurion University of Technology and Management</p>
-          <div class="edu-score">CGPA: 8.33 / 10.0</div>
-        </div>
-
-        <div class="edu-card">
-          <span class="edu-badge">2021</span>
-          <h3 class="edu-degree">Intermediate (CHSE)</h3>
-          <p class="edu-school">Shriram Higher Secondary School, Soro, Balasore</p>
-          <div class="edu-score">Score: 75%</div>
-        </div>
-
-        <div class="edu-card">
-          <span class="edu-badge">2019</span>
-          <h3 class="edu-degree">Matriculation (CBSE)</h3>
-          <p class="edu-school">St. Xavier High School, Soro, Balasore</p>
-          <div class="edu-score">Score: 71%</div>
+        <div class="profiles-grid">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="profile-card" data-reveal>
+            <img src="assets/icons/tech/linkedin.svg" alt="">
+            <span class="profile-name">LinkedIn</span>
+            <span class="profile-action">Connect <svg class="ico"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="profile-card" data-reveal>
+            <img src="assets/icons/tech/github.svg" alt="">
+            <span class="profile-name">GitHub</span>
+            <span class="profile-action">Repositories <svg class="ico"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
+          <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="profile-card" data-reveal>
+            <img src="assets/icons/tech/leetcode.svg" alt="">
+            <span class="profile-name">LeetCode</span>
+            <span class="profile-action">Problem solving <svg class="ico"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
+          <a href="mailto:nainakar2000@gmail.com" class="profile-card" data-reveal>
+            <span class="glyph"><svg class="ico"><use href="#i-mail"/></svg></span>
+            <span class="profile-name">Email</span>
+            <span class="profile-action">nainakar2000@gmail.com <svg class="ico"><use href="#i-arrow-up-right"/></svg></span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ── 6. WEB PRESENCE / PROFILES SECTION ── -->
-    <section class="section-wrapper profiles-section" id="profiles">
-      <h2 class="section-title">Web Presence - <span class="purple-text">Dev Network!</span></h2>
-      <p class="section-subtitle-text">Connect with me across digital platforms, developer networks, and professional communities.</p>
+    <!-- ── 7. CONTACT: INVITATION + FORM (GRAPHITE) ── -->
+    <section class="tile tile-graphite" id="contact">
+      <div class="tile-inner contact-grid">
+        <header class="tile-head" data-reveal>
+          <h2 class="tile-title">Let’s build something.</h2>
+          <p class="tile-lead">Software engineering roles, collaborations or a new idea: send a message and I will reply.</p>
+          <p class="status-line"><span class="status-dot"></span>Available for software & web roles</p>
+          <ul class="contact-facts">
+            <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:nainakar2000@gmail.com" class="text-link">nainakar2000@gmail.com</a></li>
+            <li><svg class="ico"><use href="#i-map-pin"/></svg>Soro, Balasore, Odisha, India</li>
+          </ul>
+        </header>
 
-      <div class="profile-header">
-        <div class="profile-img-main">
-          <img src="assets/images/naina_professional.jpg" alt="Naina Kar Profile">
-        </div>
-        <p class="profile-handle purple-text">@nainakar</p>
-      </div>
-
-      <div class="profiles-grid">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="profile-card">
-          <div class="profile-icon">
-            <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
+        <form id="contactForm" class="contact-form" data-reveal>
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
+            <label for="name">Your name</label>
           </div>
-          <div class="profile-info">
-            <h3>LinkedIn</h3>
-            <p>Connect</p>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" " autocomplete="email">
+            <label for="email">Your email</label>
           </div>
-        </a>
-
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="profile-card">
-          <div class="profile-icon">
-            <i class="fa-brands fa-github" style="color: #fff;"></i>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required placeholder=" " autocomplete="off">
+            <label for="subject">Subject or opportunity</label>
           </div>
-          <div class="profile-info">
-            <h3>GitHub</h3>
-            <p>Repositories</p>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Your message</label>
           </div>
-        </a>
-
-        <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="profile-card">
-          <div class="profile-icon">
-            <i class="devicon-leetcode-plain colored"></i>
-          </div>
-          <div class="profile-info">
-            <h3>Coding Profiles</h3>
-            <p>Problem Solving</p>
-          </div>
-        </a>
-
-        <a href="mailto:nainakar2000@gmail.com" class="profile-card">
-          <div class="profile-icon">
-            <i class="fa-solid fa-envelope" style="color: var(--c-rose-glow);"></i>
-          </div>
-          <div class="profile-info">
-            <h3>Direct Email</h3>
-            <p>Get in Touch</p>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ── 7. GET IN TOUCH SECTION (AAKARSH CONTACT CARD) ── -->
-    <section class="section-wrapper" id="contact">
-      <div class="contact-container">
-        <h2 class="section-title">Get In Touch - <span class="purple-text">Ask Me Anything!</span></h2>
-        <p class="section-subtitle-text">Ready to collaborate, discuss software engineering roles, or explore innovative ideas? Send a message below.</p>
-
-        <div class="contact-card">
-          <form id="contactForm" class="contact-form">
-            <div class="form-group">
-              <input type="text" id="name" name="name" required placeholder=" " autocomplete="off">
-              <label for="name">Your Name</label>
-              <i class="fa-solid fa-user input-icon"></i>
-            </div>
-
-            <div class="form-group">
-              <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
-              <label for="email">Your Email</label>
-              <i class="fa-solid fa-envelope input-icon"></i>
-            </div>
-
-            <div class="form-group">
-              <input type="text" id="subject" name="subject" required placeholder=" " autocomplete="off">
-              <label for="subject">Subject / Opportunity</label>
-              <i class="fa-solid fa-briefcase input-icon"></i>
-            </div>
-
-            <div class="form-group">
-              <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
-              <label for="message">Your Message</label>
-              <i class="fa-solid fa-comment-dots input-icon"></i>
-            </div>
-
-            <button type="submit" class="btn-primary btn-submit">
-              <span>Send Message</span>
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
+          <button type="submit" class="btn-pill btn-pill-lg btn-submit">
+            <span>Send message</span>
+            <svg class="ico"><use href="#i-send"/></svg>
+          </button>
+        </form>
       </div>
     </section>
 
   </div>
 
-  <!-- ── FOOTER ── -->
+  <!-- ── FOOTER: BREADCRUMB, LINK COLUMNS, FINE PRINT (APPLE STYLE) ── -->
   <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Naina<span class="purple-text">.Kar</span></h2>
-        <p class="footer-tagline">Crafting Scalable, Secure & Human-Centric Software Architectures.</p>
+    <div class="footer-inner">
+      <nav class="breadcrumb footer-crumb" aria-label="Footer breadcrumb">
+        <ol>
+          <li><a href="#home"><span class="brand-badge brand-badge-sm">NK</span></a></li>
+          <li><a href="#home">Naina Kar</a></li>
+          <li><span>Portfolio</span></li>
+        </ol>
+      </nav>
+
+      <div class="footer-cols">
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Background</h3>
+          <ul>
+            <li><a href="#education">Milestones</a></li>
+            <li><a href="#profiles">Profiles</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="footer-link btn-view-resume">Resume</button></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://leetcode.com" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+            <li><a href="mailto:nainakar2000@gmail.com">Email</a></li>
+          </ul>
+        </div>
       </div>
 
-      <ul class="footer-nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Milestones</a></li>
-        <li><a href="#profiles">Profiles</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div class="footer-socials">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:nainakar2000@gmail.com" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <div class="footer-bottom">
+        <p>Copyright © 2026 Naina Kar. All rights reserved.</p>
+        <p class="footer-credit">Logos: Devicon (MIT) and Simple Icons (CC0). Icons: Lucide (ISC).</p>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+          <svg class="ico"><use href="#i-arrow-up"/></svg>
+        </button>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Naina Kar. All rights reserved. Crafted with precision.</p>
-      <button id="backToTop" class="back-to-top" aria-label="Back to Top" title="Back to Top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </button>
     </div>
   </footer>
 
   <!-- ── RESUME MODAL ── -->
-  <div id="resumeModal" class="resume-modal" role="dialog" aria-modal="true" aria-label="Resume Modal">
-    <div class="resume-modal-content glass-card">
-      <span class="close-modal" id="closeResumeBtn">&times;</span>
-      <h2 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 8px;">
-        Curriculum Vitae - <span class="purple-text">Naina Kar</span>
-      </h2>
-      <p style="color: var(--c-blush); font-size: 0.92rem; margin-bottom: 20px;">
-        Junior Software Developer | Java · Spring Boot · React.js · Angular | Soro, Balasore, Odisha, India
-      </p>
+  <div id="resumeModal" class="resume-modal" role="dialog" aria-modal="true" aria-label="Resume">
+    <div class="resume-modal-content">
+      <button class="close-modal" id="closeResumeBtn" aria-label="Close resume"><svg class="ico"><use href="#i-x"/></svg></button>
+      <h2 class="resume-modal-title">Curriculum Vitae</h2>
+      <p class="resume-modal-sub">Junior Software Developer | Java · Spring Boot · React.js · Angular | Soro, Balasore, Odisha, India</p>
 
       <div class="resume-sheet">
         <div class="resume-header">
@@ -873,7 +747,7 @@
 
         <div class="resume-section">
           <h4>Professional Summary</h4>
-          <p style="font-size: 0.9rem; line-height: 1.65; color: #dfcbd2;">
+          <p>
             MCA student (2025-27) with hands-on project experience in Java, Spring Boot, React.js, MySQL, and REST APIs. Skilled in developing responsive web interfaces and full-stack applications with a strong foundation in OOP, DBMS, and secure coding practices. Currently learned Angular and TypeScript to expand frontend development skills. Seeking a Junior Software Developer opportunity to contribute to frontend and backend development while growing in a collaborative team.
           </p>
         </div>
@@ -889,14 +763,14 @@
         <div class="resume-section">
           <h4>Internship Experience</h4>
           <p><strong>Cyber Security Intern</strong> — Thiranex Technologies (Jun 2026 – Jul 2026)</p>
-          <ul style="font-size: 0.88rem; color: #dfcbd2; margin: 6px 0 12px 20px; line-height: 1.55;">
+          <ul>
             <li>Gained hands-on experience in cybersecurity concepts including network security, phishing attacks, secure authentication, and vulnerability assessment.</li>
             <li>Worked on identifying common web vulnerabilities such as SQL Injection and applied secure coding practices to mitigate security risks.</li>
             <li>Developed security-focused mini projects and documented cybersecurity best practices and threat prevention techniques.</li>
           </ul>
 
           <p><strong>AI/ML Intern</strong> — Skill Forge (2025)</p>
-          <ul style="font-size: 0.88rem; color: #dfcbd2; margin: 6px 0 12px 20px; line-height: 1.55;">
+          <ul>
             <li>Worked on machine learning concepts including data preprocessing, model training, and evaluation using Python and Scikit-learn.</li>
             <li>Developed mini projects involving phishing email detection and predictive data analysis using NumPy, Pandas, and Scikit-learn.</li>
           </ul>
@@ -905,30 +779,20 @@
         <div class="resume-section">
           <h4>Projects</h4>
           <p><strong>Job Sphere</strong> (React.js, Spring Boot, MySQL, REST APIs)</p>
-          <p style="font-size: 0.86rem; color: #d8c2c8; margin-bottom: 8px;">
-            Full-stack job portal enabling users to browse listings, view details, and manage applications with reusable React components, state management, and Spring Boot REST APIs.
-          </p>
+          <p class="resume-note">Full-stack job portal enabling users to browse listings, view details, and manage applications with reusable React components, state management, and Spring Boot REST APIs.</p>
           <p><strong>Secure Login System</strong> (Java, SQL)</p>
-          <p style="font-size: 0.86rem; color: #d8c2c8; margin-bottom: 8px;">
-            Secure authentication system with password hashing, input validation, and defensive measures to prevent SQL Injection vulnerabilities.
-          </p>
+          <p class="resume-note">Secure authentication system with password hashing, input validation, and defensive measures to prevent SQL Injection vulnerabilities.</p>
           <p><strong>Password Strength Analyzer</strong> (Java)</p>
-          <p style="font-size: 0.86rem; color: #d8c2c8; margin-bottom: 8px;">
-            Application evaluating password entropy and resilience based on security rules, offering real-time feedback and recommendations.
-          </p>
+          <p class="resume-note">Application evaluating password entropy and resilience based on security rules, offering real-time feedback and recommendations.</p>
           <p><strong>Portfolio Website</strong> (HTML, CSS, React)</p>
-          <p style="font-size: 0.86rem; color: #d8c2c8; margin-bottom: 8px;">
-            Modern responsive portfolio designed with optimized layouts, glassmorphism, and interactive animations across all screen sizes.
-          </p>
+          <p class="resume-note">Modern responsive portfolio designed with optimized layouts, glassmorphism, and interactive animations across all screen sizes.</p>
           <p><strong>Restaurant Website</strong> (WordPress, Elementor)</p>
-          <p style="font-size: 0.86rem; color: #d8c2c8; margin-bottom: 8px;">
-            Responsive restaurant website concept focusing on clean navigation, visual menu presentation, and mobile-friendly layouts.
-          </p>
+          <p class="resume-note">Responsive restaurant website concept focusing on clean navigation, visual menu presentation, and mobile-friendly layouts.</p>
         </div>
 
         <div class="resume-section">
           <h4>Technical Skills</h4>
-          <p style="font-size: 0.88rem; line-height: 1.6; color: #dfcbd2;">
+          <p>
             <strong>Languages:</strong> Python, Java, C, JavaScript, SQL<br>
             <strong>Web & Frontend:</strong> React.js, HTML, CSS, WordPress, Bootstrap<br>
             <strong>UI/UX & Design:</strong> Figma, UI/UX Design, Responsive Web Design<br>
@@ -941,7 +805,7 @@
 
         <div class="resume-section">
           <h4>Certifications</h4>
-          <p style="font-size: 0.88rem; color: #dfcbd2;">
+          <p>
             • <strong>Cyber Security Internship Certificate</strong> — Thiranex Technologies (2026)<br>
             • <strong>AI/ML Internship Certificate</strong> — Skill Forge (2025)
           </p>
@@ -949,13 +813,13 @@
       </div>
 
       <div class="resume-actions">
-        <button class="btn-secondary" onclick="window.print()">
-          <i class="fa-solid fa-print"></i>
+        <button class="btn-pill btn-pill-ghost" onclick="window.print()">
+          <svg class="ico"><use href="#i-printer"/></svg>
           <span>Print / Save as PDF</span>
         </button>
-        <a href="mailto:nainakar2000@gmail.com?subject=Opportunity%20Inquiry%20for%20Naina%20Kar" class="btn-primary">
-          <i class="fa-solid fa-paper-plane"></i>
-          <span>Contact for Full CV</span>
+        <a href="mailto:nainakar2000@gmail.com?subject=Opportunity%20Inquiry%20for%20Naina%20Kar" class="btn-pill">
+          <svg class="ico"><use href="#i-send"/></svg>
+          <span>Contact for full CV</span>
         </a>
       </div>
     </div>
