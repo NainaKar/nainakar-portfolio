@@ -1,7 +1,7 @@
 /* ══════════════════════════════════════════════════════════════
    NAINA KAR PORTFOLIO — DESIGN SYSTEM & STYLESHEET
    Hybrid: Sawad Framer Hero + Aakarsh Architecture
-   Theme: Luxurious Berry, Burgundy, Raspberry & Rose Glow
+   Theme: "Графит" (Graphite) — 7 Tones of Pure Interface Aesthetic
    ══════════════════════════════════════════════════════════════ */
 
 /* ── GOOGLE FONTS ── */
@@ -9,34 +9,43 @@
 
 /* ── ROOT VARIABLES (THEME PALETTE FROM USER IMAGE) ── */
 :root {
-  /* Exact Colors from User's Image Palette */
-  --c-maroon: #800021;       /* Deepest burgundy / wine */
-  --c-berry: #881144;        /* Rich crimson berry velvet */
-  --c-raspberry: #E24366;    /* Vibrant hot rose / raspberry */
-  --c-blush: #EA869E;        /* Soft blush mauve / carnation pink */
-  --c-silk: #FDE8EB;         /* Pale blush cream / silk white */
-  --c-rose-glow: #FF69B4;    /* Glowing neon rose / pink highlight */
+  /* ── 7 EXACT GRAPHITE TONES FROM USER'S PALETTE ── */
+  --c-graphite-1: #0E0E10;       /* #0E0E10 - Darkest obsidian canvas */
+  --c-graphite-2: #232327;       /* #232327 - Deep graphite charcoal surface */
+  --c-graphite-3: #3E3E45;       /* #3E3E45 - Medium graphite borders & elevation */
+  --c-graphite-4: #63636E;       /* #63636E - Slate graphite text & dividers */
+  --c-graphite-5: #9A9AA6;       /* #9A9AA6 - Soft pewter graphite body copy */
+  --c-graphite-6: #C9C9D2;       /* #C9C9D2 - Pale silver graphite highlights */
+  --c-graphite-7: #F2F2F5;       /* #F2F2F5 - Crisp off-white silver headlines */
+
+  /* Legacy aliases mapped to Graphite for clean compatibility */
+  --c-maroon: #0E0E10;
+  --c-berry: #232327;
+  --c-raspberry: #3E3E45;
+  --c-blush: #9A9AA6;
+  --c-silk: #F2F2F5;
+  --c-rose-glow: #C9C9D2;
 
   /* Dark Luxury Backgrounds */
-  --bg-dark: #0a0105;
-  --bg-deep: #110209;
-  --bg-surface: #18030e;
-  --bg-card: rgba(28, 4, 15, 0.65);
-  --bg-card-hover: rgba(45, 6, 25, 0.82);
-  --bg-glass-pill: rgba(20, 2, 11, 0.85);
+  --bg-dark: #0E0E10;
+  --bg-deep: #161619;
+  --bg-surface: #1E1E22;
+  --bg-card: rgba(35, 35, 39, 0.75);
+  --bg-card-hover: rgba(62, 62, 69, 0.85);
+  --bg-glass-pill: rgba(22, 22, 26, 0.85);
 
   /* Glass Borders */
-  --border-glass: rgba(226, 67, 102, 0.18);
-  --border-glass-hover: rgba(255, 105, 180, 0.45);
-  --border-glow: rgba(226, 67, 102, 0.4);
+  --border-glass: rgba(154, 154, 166, 0.18);
+  --border-glass-hover: rgba(201, 201, 210, 0.45);
+  --border-glow: rgba(242, 242, 245, 0.22);
 
   /* Gradients */
-  --grad-primary: linear-gradient(135deg, #881144 0%, #E24366 100%);
-  --grad-berry-rose: linear-gradient(135deg, #800021 0%, #881144 50%, #E24366 100%);
-  --grad-glow: linear-gradient(135deg, #E24366 0%, #FF69B4 100%);
-  --grad-text: linear-gradient(135deg, #FFFFFF 15%, #FDE8EB 45%, #E24366 85%, #FF69B4 100%);
-  --grad-text-subtle: linear-gradient(135deg, #FDE8EB 0%, #EA869E 100%);
-  --grad-card: linear-gradient(145deg, rgba(38, 5, 21, 0.65) 0%, rgba(16, 2, 9, 0.85) 100%);
+  --grad-primary: linear-gradient(135deg, #F2F2F5 0%, #C9C9D2 50%, #9A9AA6 100%);
+  --grad-berry-rose: linear-gradient(135deg, #3E3E45 0%, #232327 50%, #0E0E10 100%);
+  --grad-glow: linear-gradient(135deg, #FFFFFF 0%, #C9C9D2 100%);
+  --grad-text: linear-gradient(135deg, #FFFFFF 20%, #F2F2F5 50%, #C9C9D2 80%, #9A9AA6 100%);
+  --grad-text-subtle: linear-gradient(135deg, #F2F2F5 0%, #9A9AA6 100%);
+  --grad-card: linear-gradient(145deg, rgba(35, 35, 39, 0.85) 0%, rgba(14, 14, 16, 0.95) 100%);
 
   /* Typography */
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -45,10 +54,10 @@
   --font-serif: 'Playfair Display', Georgia, serif;
 
   /* Shadows */
-  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.45);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.55), 0 0 1px rgba(226, 67, 102, 0.25);
-  --shadow-glow: 0 0 35px rgba(226, 67, 102, 0.35);
-  --shadow-btn: 0 6px 25px rgba(226, 67, 102, 0.4);
+  --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 1px rgba(154, 154, 166, 0.25);
+  --shadow-glow: 0 0 35px rgba(201, 201, 210, 0.15);
+  --shadow-btn: 0 6px 25px rgba(242, 242, 245, 0.2);
 
   /* Layout */
   --container-max: 1200px;
@@ -84,8 +93,8 @@ body {
 }
 
 ::selection {
-  background: var(--c-raspberry);
-  color: #fff;
+  background: #3E3E45;
+  color: #F2F2F5;
 }
 
 a {
@@ -130,7 +139,7 @@ img {
 .preloader {
   position: fixed;
   inset: 0;
-  background: #090104;
+  background: #0E0E10;
   z-index: 99999;
   display: flex;
   flex-direction: column;
@@ -221,9 +230,9 @@ img {
 .preloader-sleek-fill {
   width: 0%;
   height: 100%;
-  background: linear-gradient(90deg, var(--c-maroon), var(--c-berry), var(--c-raspberry), var(--c-rose-glow));
+  background: linear-gradient(90deg, #3E3E45, #63636E, #C9C9D2, #F2F2F5);
   border-radius: 999px;
-  box-shadow: 0 0 12px var(--c-raspberry);
+  box-shadow: 0 0 14px rgba(242, 242, 245, 0.6);
   transition: width 0.05s linear;
 }
 
@@ -270,7 +279,7 @@ img {
 .cursor-outline {
   width: 32px;
   height: 32px;
-  border: 1.5px solid rgba(226, 67, 102, 0.6);
+  border: 1.5px solid rgba(201, 201, 210, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -285,8 +294,8 @@ img {
   width: 54px;
   height: 54px;
   border-color: var(--c-rose-glow);
-  background: rgba(226, 67, 102, 0.12);
-  box-shadow: 0 0 18px rgba(226, 67, 102, 0.4);
+  background: rgba(242, 242, 245, 0.1);
+  box-shadow: 0 0 18px rgba(242, 242, 245, 0.3);
 }
 
 
@@ -304,7 +313,7 @@ img {
   letter-spacing: 0.01em;
   box-shadow: var(--shadow-btn);
   transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-  border: 1px solid rgba(255, 105, 180, 0.3);
+  border: 1px solid rgba(242, 242, 245, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -322,8 +331,8 @@ img {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(226, 67, 102, 0.6);
-  border-color: rgba(255, 105, 180, 0.6);
+  box-shadow: 0 8px 30px rgba(242, 242, 245, 0.3);
+  border-color: #F2F2F5;
 }
 
 .btn-primary:hover::after {
@@ -398,7 +407,7 @@ img {
   background: #ffffff;
   border-radius: 28px;
   padding: 24px 24px 30px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(226, 67, 102, 0.2);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(201, 201, 210, 0.1);
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -407,7 +416,7 @@ img {
 
 .sawad-portrait-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 32px 75px rgba(0, 0, 0, 0.8), 0 0 50px rgba(226, 67, 102, 0.35);
+  box-shadow: 0 32px 75px rgba(0, 0, 0, 0.85), 0 0 50px rgba(201, 201, 210, 0.2);
 }
 
 .card-dashed-arc {
@@ -417,7 +426,7 @@ img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px dashed rgba(226, 67, 102, 0.45);
+  border: 2px dashed rgba(99, 99, 110, 0.45);
   pointer-events: none;
   z-index: 1;
 }
@@ -428,7 +437,7 @@ img {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(145deg, #881144, #E24366);
+  background: linear-gradient(145deg, #232327, #3E3E45); border: 1px solid #63636E;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
   z-index: 2;
 }
@@ -459,14 +468,14 @@ img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #881144, #E24366);
+  background: linear-gradient(135deg, #3E3E45, #232327);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.95rem;
   margin: 12px auto 12px;
-  box-shadow: 0 4px 14px rgba(226, 67, 102, 0.45);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
@@ -478,7 +487,7 @@ img {
   transform: translateX(-50%);
   width: 2px;
   height: 12px;
-  border-left: 2px dashed rgba(226, 67, 102, 0.5);
+  border-left: 2px dashed rgba(99, 99, 110, 0.5);
 }
 
 .card-tagline {
@@ -513,10 +522,10 @@ img {
 }
 
 .card-social-links a:hover {
-  background: linear-gradient(135deg, #881144, #E24366);
+  background: linear-gradient(135deg, #3E3E45, #232327);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(226, 67, 102, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* ── RIGHT COLUMN: GIANT TYPOGRAPHY, BIO & STATS ── */
@@ -547,17 +556,17 @@ img {
   font-weight: 900;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #2b0615;
-  -webkit-text-stroke: 1.5px rgba(226, 67, 102, 0.65);
+  color: #0E0E10;
+  -webkit-text-stroke: 1.5px #63636E;
   line-height: 0.92;
   margin: 0;
-  filter: drop-shadow(0 0 25px rgba(226, 67, 102, 0.25));
+  filter: drop-shadow(0 0 25px rgba(201, 201, 210, 0.12));
 }
 
 .sawad-desc {
   font-size: 1.15rem;
   line-height: 1.75;
-  color: #d8c2c8;
+  color: #9A9AA6;
   max-width: 620px;
   margin-bottom: 38px;
   font-weight: 400;
@@ -597,7 +606,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #b0919b;
+  color: #9A9AA6;
   line-height: 1.35;
 }
 
@@ -619,9 +628,9 @@ img {
   --bg-dark: #000;
   --ap-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
   --ap-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", system-ui, sans-serif;
-  --ap-blue: #0066cc;
-  --ap-blue-on-dark: #2997ff;
-  --ap-focus: #0071e3;
+  --ap-blue: #F2F2F5;
+  --ap-blue-on-dark: #C9C9D2;
+  --ap-focus: #C9C9D2;
   --ap-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   --header-h: 52px;
 }
@@ -734,7 +743,7 @@ html {
   width: 30px;
   height: 30px;
   border-radius: 8px;
-  background: var(--c-berry);
+  background: #232327; border: 1px solid #3E3E45;
   color: #fff;
   font: 700 12px/1 var(--ap-display);
   letter-spacing: 0.02em;
@@ -866,7 +875,9 @@ html {
 }
 
 .btn-pill:hover {
-  background: #0077ed;
+  background: #FFFFFF;
+  color: #0E0E10;
+  box-shadow: 0 4px 20px rgba(242, 242, 245, 0.25);
 }
 
 .btn-pill:active,
@@ -996,13 +1007,13 @@ html {
 }
 
 .tile {
-  --bg: #000;
-  --fg: #f5f5f7;
-  --fg-2: #a1a1a6;
-  --card: #1d1d1f;
-  --card-2: #2c2c2e;
-  --hair: rgba(255, 255, 255, 0.12);
-  --link: var(--ap-blue-on-dark);
+  --bg: #0E0E10;
+  --fg: #F2F2F5;
+  --fg-2: #9A9AA6;
+  --card: #232327;
+  --card-2: #3E3E45;
+  --hair: rgba(154, 154, 166, 0.16);
+  --link: #C9C9D2;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--ap-font);
@@ -1011,13 +1022,23 @@ html {
 }
 
 .tile-light {
-  --bg: #f5f5f7;
-  --fg: #1d1d1f;
-  --fg-2: #6e6e73;
-  --card: #fff;
-  --card-2: #e8e8ed;
-  --hair: rgba(0, 0, 0, 0.08);
-  --link: var(--ap-blue);
+  --bg: #F2F2F5;
+  --fg: #0E0E10;
+  --fg-2: #63636E;
+  --card: #FFFFFF;
+  --card-2: #C9C9D2;
+  --hair: rgba(14, 14, 16, 0.1);
+  --link: #232327;
+}
+
+.tile-white {
+  --bg: #FFFFFF;
+  --fg: #0E0E10;
+  --fg-2: #63636E;
+  --card: #F2F2F5;
+  --card-2: #C9C9D2;
+  --hair: rgba(14, 14, 16, 0.1);
+  --link: #232327;
 }
 
 .tile-white {
@@ -1031,9 +1052,9 @@ html {
 }
 
 .tile-graphite {
-  --bg: #161617;
-  --card: #232325;
-  --card-2: #333336;
+  --bg: #0E0E10;
+  --card: #232327;
+  --card-2: #3E3E45;
 }
 
 .tile strong {
@@ -1825,8 +1846,9 @@ html {
 
 /* ── FOOTER (APPLE STYLE) ── */
 .footer {
-  background: #f5f5f7;
-  color: #6e6e73;
+  background: #0E0E10;
+  color: #9A9AA6;
+  border-top: 1px solid #232327;
   font-family: var(--ap-font);
   font-size: 13px;
   padding: 28px 0 24px;
@@ -1840,24 +1862,23 @@ html {
 
 .footer-crumb {
   padding-bottom: 18px;
-  border-bottom: 1px solid #d2d2d7;
+  border-bottom: 1px solid #232327;
 }
 
 .footer .breadcrumb ol {
   font-size: 13px;
 }
 
-.footer .breadcrumb li,
-.footer .breadcrumb a {
-  color: #6e6e73;
+.footer .breadcrumb li, .footer .breadcrumb a {
+  color: #63636E;
 }
 
 .footer .breadcrumb a:hover {
-  color: #1d1d1f;
+  color: #F2F2F5;
 }
 
 .footer .breadcrumb li:last-child span {
-  color: #1d1d1f;
+  color: #F2F2F5;
 }
 
 .footer-cols {
@@ -1869,7 +1890,7 @@ html {
 
 .footer-cols h3 {
   font: 600 13px/1.3 var(--ap-font);
-  color: #1d1d1f;
+  color: #F2F2F5;
   margin: 0 0 10px;
 }
 
@@ -1883,16 +1904,14 @@ html {
   line-height: 2.2;
 }
 
-.footer-cols a,
-.footer-link {
-  color: #424245;
+.footer-cols a, .footer-link {
+  color: #9A9AA6;
   font: inherit;
   cursor: pointer;
 }
 
-.footer-cols a:hover,
-.footer-link:hover {
-  color: #1d1d1f;
+.footer-cols a:hover, .footer-link:hover {
+  color: #F2F2F5;
   text-decoration: underline;
 }
 
@@ -1902,7 +1921,7 @@ html {
   align-items: center;
   gap: 8px 24px;
   padding-top: 16px;
-  border-top: 1px solid #d2d2d7;
+  border-top: 1px solid #232327;
 }
 
 .footer-bottom p {
@@ -1919,12 +1938,13 @@ html {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #e8e8ed;
-  color: #1d1d1f;
+  background: #232327;
+  color: #F2F2F5;
+  border: 1px solid #3E3E45;
   font-size: 16px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease, background 0.2s ease;
+  transition: opacity 0.3s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .back-to-top.visible {
@@ -1933,7 +1953,8 @@ html {
 }
 
 .back-to-top:hover {
-  background: #d2d2d7;
+  background: #3E3E45;
+  border-color: #63636E;
 }
 
 /* ── RESUME MODAL ── */
@@ -1970,8 +1991,7 @@ html {
   overflow-y: auto;
   padding: 40px;
   border-radius: 28px;
-  background: #1d1d1f;
-  color: #f5f5f7;
+  background: #232327; border: 1px solid #3E3E45; color: #F2F2F5;
 }
 
 .close-modal {
@@ -1983,14 +2003,13 @@ html {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #2c2c2e;
-  color: #f5f5f7;
+  background: #3E3E45; color: #F2F2F5;
   font-size: 18px;
   transition: background 0.2s ease;
 }
 
 .close-modal:hover {
-  background: #3a3a3c;
+  background: #63636E;
 }
 
 .resume-modal-title {
@@ -2009,7 +2028,7 @@ html {
 .resume-sheet {
   padding: 32px;
   border-radius: 18px;
-  background: #000;
+  background: #0E0E10; border: 1px solid #3E3E45;
 }
 
 .resume-header {
@@ -2326,4 +2345,23 @@ html {
   .nav-actions .btn-pill-sm {
     padding: 6px 12px;
   }
+}
+
+
+/* Tile button context overrides for high-contrast accessibility */
+.tile-light .btn-pill {
+  background: #0E0E10;
+  color: #F2F2F5;
+}
+.tile-light .btn-pill:hover {
+  background: #232327;
+  color: #FFFFFF;
+}
+.tile-white .btn-pill {
+  background: #0E0E10;
+  color: #F2F2F5;
+}
+.tile-white .btn-pill:hover {
+  background: #232327;
+  color: #FFFFFF;
 }

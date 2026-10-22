@@ -24,13 +24,13 @@
   const posArray = new Float32Array(starsCount * 3);
   const colorArray = new Float32Array(starsCount * 3);
 
-  // Mostly neutral starlight with a rare berry star, so pink stays an accent
+  // 7 Shades of Graphite starlight (#0E0E10 to #F2F2F5)
   const palette = [
-    new THREE.Color(0xffffff),
-    new THREE.Color(0xf5f5f7),
-    new THREE.Color(0xd2d2d7),
-    new THREE.Color(0x86868b),
-    new THREE.Color(0xe24366)
+    new THREE.Color(0xF2F2F5),
+    new THREE.Color(0xC9C9D2),
+    new THREE.Color(0x9A9AA6),
+    new THREE.Color(0x63636E),
+    new THREE.Color(0x3E3E45)
   ];
 
   for (let i = 0; i < starsCount; i++) {
@@ -55,9 +55,9 @@
     const ctx = c.getContext('2d');
     const grad = ctx.createRadialGradient(32, 32, 0, 32, 32, 30);
     grad.addColorStop(0, 'rgba(255, 255, 255, 1)');
-    grad.addColorStop(0.3, 'rgba(245, 245, 247, 0.7)');
-    grad.addColorStop(0.7, 'rgba(210, 210, 215, 0.25)');
-    grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+    grad.addColorStop(0.3, 'rgba(242, 242, 245, 0.8)');
+    grad.addColorStop(0.7, 'rgba(154, 154, 166, 0.25)');
+    grad.addColorStop(1, 'rgba(14, 14, 16, 0)');
     ctx.fillStyle = grad;
     ctx.beginPath();
     ctx.arc(32, 32, 30, 0, Math.PI * 2);
@@ -82,7 +82,7 @@
   // ── Floating Subtle Wireframe Polyhedron ──
   const geoIco = new THREE.IcosahedronGeometry(14, 1);
   const matIco = new THREE.MeshBasicMaterial({
-    color: 0x86868b,
+    color: 0x63636E,
     wireframe: true,
     transparent: true,
     opacity: 0.08
