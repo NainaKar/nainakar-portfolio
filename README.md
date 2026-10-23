@@ -52,14 +52,13 @@ Welcome to the official repository for my personal portfolio website. This proje
 ## 🚀 Running Locally
 
 1. **Clone or Download** this repository.
-2. Open terminal in the project directory:
+2. Double-click `index.html` to open and view the portfolio directly in any modern browser.
+3. *(Optional)* You can also run the local Node.js server:
    ```bash
    npm start
    # or
    node server.js
    ```
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
-*(You can also simply double-click `index.html` to run directly in any browser!)*
 
 ---
 
