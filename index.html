@@ -19,8 +19,13 @@
   <!-- Favicon (Inline Berry SVG) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='28' fill='%23881144'/><text x='50%' y='63%' font-size='48' font-weight='900' fill='%23fff' text-anchor='middle' font-family='sans-serif'>NK</text></svg>">
 
+  <!-- Google Fonts: Anton & Bebas Neue for Editorial Statement Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <!-- Custom Stylesheet (icons and logos are self-hosted in assets/icons) -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
 
@@ -122,89 +127,36 @@
   </header>
 
   <!-- ══════════════════════════════════════════════════════════════
-       HERO SECTION — SAWAD FRAMER STYLE
-       Left: Portrait Card with Professional Photo
-       Right: Giant Typography, Bio & Stats
+       HERO SECTION — HIGH-FASHION EDITORIAL PINNED SCROLL HERO
+       Reference: Audrey Faustina Poster Interaction
+       Top-Left: NAINA (Translates down to dock with KAR on scroll)
+       Bottom-Right: KAR (Anchored)
+       Micro-copy fades out as user scrolls
        ══════════════════════════════════════════════════════════════ -->
-  <main class="sawad-hero" id="home">
-    <div class="sawad-hero-grid">
+  <main class="editorial-hero" id="home" aria-label="Naina Kar">
+    <div class="editorial-hero-stage">
 
-      <!-- ── LEFT COLUMN: SAWAD PORTRAIT CARD (MATCHING SCREENSHOT) ── -->
-      <div class="sawad-card-col">
-        <div class="sawad-portrait-card">
-          <!-- Decorative dashed arc -->
-          <div class="card-dashed-arc"></div>
-
-          <!-- Professional Photo Container -->
-          <div class="portrait-img-box">
-            <img src="assets/images/naina_professional.jpg" alt="Naina Kar - Full Stack Developer" class="portrait-photo">
-          </div>
-
-          <!-- Person Name -->
-          <h3 class="card-person-name">Naina Kar</h3>
-
-          <!-- Glowing Flame/Spark Badge -->
-          <div class="card-spark-badge">
-            <svg class="ico"><use href="#i-flame"/></svg>
-          </div>
-
-          <!-- Bio Tagline -->
-          <p class="card-tagline">
-            A Full Stack Web Developer & Software Engineer who has developed countless innovative solutions.
-          </p>
-
-          <!-- Social Icons Row -->
-          <div class="card-social-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico"><use href="#i-linkedin"/></svg></a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ico"><use href="#i-github"/></svg></a>
-            <a href="mailto:nainakar2000@gmail.com" aria-label="Email"><svg class="ico"><use href="#i-mail"/></svg></a>
-            <a href="#projects" aria-label="Projects"><svg class="ico"><use href="#i-code-xml"/></svg></a>
-          </div>
-        </div>
+      <!-- Full-Bleed Portrait Backdrop -->
+      <div class="editorial-hero-media">
+        <img src="assets/images/naina_professional.jpg" alt="Naina Kar - Full Stack Software Engineer" class="editorial-hero-img">
+        <div class="editorial-hero-scrim"></div>
       </div>
 
-      <!-- ── RIGHT COLUMN: GIANT TYPOGRAPHY, BIO & STATS ── -->
-      <div class="sawad-content-col">
-        <div class="sawad-title-block">
-          <h1 class="sawad-title-main">SOFTWARE</h1>
-          <h2 class="sawad-title-sub">ENGINEER</h2>
+      <!-- Foreground Editorial Typography & Copy -->
+      <div class="editorial-hero-content">
+        <!-- Top Left: First Name (Scrolls down to dock alongside KAR) -->
+        <h1 class="editorial-name-first" id="heroNameFirst">NAINA</h1>
+
+        <!-- Bottom Left: Little About Text (Vanishes on scroll) -->
+        <div class="editorial-about-corner" id="heroAboutCorner">
+          <span class="editorial-about-tag">Full Stack Developer & MCA Scholar</span>
+          <p class="editorial-about-desc">
+            Crafting resilient backends with Java & Spring Boot, paired with reactive, human-centred web architectures.
+          </p>
         </div>
 
-        <p class="sawad-desc">
-          Junior Software Developer & MCA scholar (2025–27) with hands-on project experience in <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>React.js</strong>, <strong>MySQL</strong>, and <strong>REST APIs</strong>. Strong foundation in OOP, DBMS, secure authentication, and currently learning <strong>Angular & TypeScript</strong>.
-        </p>
-
-        <!-- Stats Row (Matching Real Resume Data) -->
-        <div class="sawad-stats-row">
-          <div class="sawad-stat-unit">
-            <div class="stat-number">8.83</div>
-            <div class="stat-label">MCA SGPA<br>(CIME BPUT)</div>
-          </div>
-          <div class="sawad-stat-unit">
-            <div class="stat-number">8.33</div>
-            <div class="stat-label">B.SC IT CGPA<br>(CENTURION UNIV)</div>
-          </div>
-          <div class="sawad-stat-unit">
-            <div class="stat-number">5+</div>
-            <div class="stat-label">CORE PROJECTS<br>COMPLETED</div>
-          </div>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="sawad-cta-row">
-          <a href="#projects" class="btn-primary" id="heroExploreBtn">
-            <span>Explore My Work</span>
-            <svg class="ico"><use href="#i-arrow-right"/></svg>
-          </a>
-          <button class="btn-secondary btn-view-resume" id="heroResumeBtn">
-            <svg class="ico"><use href="#i-file-text"/></svg>
-            <span>View Resume</span>
-          </button>
-          <a href="#contact" class="btn-secondary">
-            <svg class="ico"><use href="#i-send"/></svg>
-            <span>Let's Talk</span>
-          </a>
-        </div>
+        <!-- Bottom Right: Last Name (Anchored at bottom right) -->
+        <div class="editorial-name-last" id="heroNameLast">KAR</div>
       </div>
 
     </div>
@@ -254,70 +206,79 @@
        ══════════════════════════════════════════════════════════════ -->
   <div class="main-content">
 
-    <!-- ── 1. ABOUT: BENTO GRID (LIGHT) ── -->
-    <section class="tile tile-light" id="about">
-      <div class="tile-inner">
-        <header class="tile-head" data-reveal>
-          <h2 class="tile-title">Behind the code.</h2>
-          <p class="tile-lead">Bridging software architecture, cybersecurity principles and intuitive user experiences.</p>
-        </header>
+    <!-- ── 1. ABOUT: EDITORIAL STATEMENT SECTION (A-B-O / U-T SPLIT POSTER) ── -->
+    <section class="about-statement-section" id="about" aria-label="About Naina Kar">
+      <div class="about-poster-wrap">
 
-        <div class="bento">
-          <article class="bento-card bento-story" data-reveal>
-            <blockquote class="bento-quote">“Technology empowers us to translate intricate challenges into elegant, resilient and human-centric software.”</blockquote>
-            <p>
-              I am a <strong>Junior Software Developer</strong> and <strong>MCA student (2025–27)</strong> at the College of IT Management and Education, with a B.Sc in Information Technology from Centurion University of Technology and Management.
-              I build full-stack applications with <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>React.js</strong>, <strong>MySQL</strong> and <strong>REST APIs</strong>, grounded in OOP, DBMS and secure coding practices — and I am expanding my frontend work with <strong>Angular</strong> and <strong>TypeScript</strong>.
-            </p>
-            <div class="bento-actions">
-              <button class="btn-pill btn-view-resume">View full CV</button>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-link">LinkedIn <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+        <!-- ROW 1: TOP FLUSH (ABO + PHOTO EXACT SAME HEIGHT & LEVEL) -->
+        <div class="about-poster-row-top" data-reveal>
+          <div class="about-poster-cell-abo">
+            <svg viewBox="3 62 711 446" preserveAspectRatio="none" class="about-wordmark" aria-label="ABO">
+              <path d="M90.82 500L7.32 500L48.83 70.31L194.58 70.31L235.35 500L154.05 500L147.95 430.66L96.19 430.66L90.82 500M118.65 143.55L102.29 362.06L141.36 362.06L122.56 143.55L118.65 143.55M378.17 500L261.72 500L261.72 70.31L378.17 70.31Q425.05 70.31 446.41 93.14Q467.77 115.97 467.77 168.46L467.77 187.26Q467.77 217.53 456.91 236.33Q446.04 255.13 423.83 260.99Q452.88 268.31 462.77 295.29Q472.66 322.27 472.66 361.08Q472.66 402.83 464.84 434.08Q457.03 465.33 436.52 482.67Q416.02 500 378.17 500M345.70 136.72L345.70 232.18L363.28 232.18Q375.24 232.18 378.66 222.90Q382.08 213.62 382.08 200.68L382.08 157.47Q382.08 136.72 363.77 136.72L345.70 136.72M354.25 424.32Q387.70 424.32 387.70 392.58L387.70 338.87Q387.70 320.56 382.20 309.94Q376.71 299.32 361.57 299.32L345.70 299.32L345.70 423.83Q351.07 424.32 354.25 424.32M603.52 503.91Q552 503.91 524.78 472.78Q497.56 441.65 497.56 382.81L497.56 178.71Q497.56 123.54 524.54 94.97Q551.51 66.41 603.52 66.41Q655.52 66.41 682.50 94.97Q709.47 123.54 709.47 178.71L709.47 382.81Q709.47 441.65 682.25 472.78Q655.03 503.91 603.52 503.91M604.25 424.80Q623.78 424.80 623.78 386.96L623.78 177.25Q623.78 145.51 604.74 145.51Q583.25 145.51 583.25 177.98L583.25 387.45Q583.25 407.47 588.13 416.14Q593.02 424.80 604.25 424.80" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="about-poster-cell-photo">
+            <img src="assets/images/naina_professional.jpg" alt="Naina Kar - Full Stack Developer" class="about-poster-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- ROW 2: BOTTOM (NARRATIVE BIO + UT) -->
+        <div class="about-poster-row-bottom" data-reveal>
+          <div class="about-poster-cell-bio">
+            <h3 class="about-statement-subhead">
+              FULL STACK SOFTWARE ENGINEER CRAFTING RESILIENT ARCHITECTURES AND INTUITIVE DIGITAL EXPERIENCES.
+            </h3>
+            <div class="about-statement-body">
+              <p>
+                Every impactful system begins with a foundation of intentional architecture. I believe in digging deep into the core of complex problems — engineering robust backends with Java, Spring Boot, and secure REST APIs that connect seamlessly with dynamic, human-centred user interfaces. It's not about decoration; it's about performance, security, and building scalable software that endures.
+              </p>
+              <p>
+                My journey began with a simple belief: that great software starts with listening and precision. Before a single line of backend logic or reactive UI is committed, I immerse myself in understanding user workflows, database integrity, and the problem only software can solve. Every relational schema in MySQL, every React component, and every security protocol is intentional, rooted in strategy and shaped by craft.
+              </p>
             </div>
-          </article>
-
-          <figure class="bento-card bento-photo" data-reveal>
-            <img src="assets/images/naina_current.jpg" alt="Naina Kar at her desk beneath a Build, Create, Grow sign" loading="lazy">
-          </figure>
-
-          <div class="bento-card bento-stat" data-reveal>
-            <p class="stat-figure">8.83</p>
-            <p class="stat-caption">MCA SGPA<br><span>CIME · 2025 – 2027</span></p>
+            <div class="about-statement-actions">
+              <button class="about-btn-action btn-view-resume">
+                <span>View Full Resume</span>
+                <svg class="ico"><use href="#i-file-text"/></svg>
+              </button>
+              <a href="#contact" class="about-link-action">
+                <span>Let's Talk</span>
+                <svg class="ico"><use href="#i-arrow-right"/></svg>
+              </a>
+            </div>
           </div>
-
-          <div class="bento-card bento-stat" data-reveal>
-            <p class="stat-figure">8.33</p>
-            <p class="stat-caption">B.Sc IT CGPA<br><span>Centurion University · 2022 – 2025</span></p>
+          <div class="about-poster-cell-ut">
+            <svg viewBox="10 66 424 442" preserveAspectRatio="none" class="about-wordmark" aria-label="UT">
+              <path d="M118.41 503.91Q64.70 503.91 39.31 473.75Q13.92 443.60 13.92 385.01L13.92 70.31L97.41 70.31L97.41 381.59Q97.41 392.33 98.63 402.22Q99.85 412.11 104.25 418.46Q108.64 424.80 118.41 424.80Q128.42 424.80 132.81 418.58Q137.21 412.35 138.31 402.34Q139.40 392.33 139.40 381.59L139.40 70.31L222.90 70.31L222.90 385.01Q222.90 443.60 197.51 473.75Q172.12 503.91 118.41 503.91M378.66 500L292.72 500L292.72 152.83L241.70 152.83L241.70 70.31L429.69 70.31L429.69 152.83L378.66 152.83" fill="currentColor" />
+            </svg>
           </div>
+        </div>
 
-          <div class="bento-card bento-meta" data-reveal>
-            <p><svg class="ico"><use href="#i-map-pin"/></svg> Soro, Balasore, Odisha, India</p>
-            <p><svg class="ico"><use href="#i-mail"/></svg> <a href="mailto:nainakar2000@gmail.com" class="text-link">nainakar2000@gmail.com</a></p>
+      </div>
+
+      <!-- KEY MILESTONES & CREDENTIALS STRIP -->
+      <div class="about-milestone-strip" data-reveal>
+        <div class="about-milestone-inner">
+          <div class="about-milestone-card">
+            <span class="milestone-badge">Academic Excellence</span>
+            <div class="milestone-num">8.83</div>
+            <div class="milestone-desc">MCA SGPA · CIME BPUT (2025–27)</div>
           </div>
-
-          <article class="bento-card bento-pillar" data-reveal>
-            <div class="logo-stack"><img src="assets/icons/tech/java.svg" alt="Java"><img src="assets/icons/tech/spring.svg" alt="Spring Boot"></div>
-            <h3>Java & Spring Boot</h3>
-            <p>Robust backend services, modular RESTful APIs and responsive React.js frontends on MySQL.</p>
-          </article>
-
-          <article class="bento-card bento-pillar" data-reveal>
-            <div class="logo-stack"><span class="glyph"><svg class="ico"><use href="#i-shield-check"/></svg></span></div>
-            <h3>Cybersecurity & Defense</h3>
-            <p>Network security, phishing analysis, secure authentication, password hashing and SQL Injection mitigation.</p>
-          </article>
-
-          <article class="bento-card bento-pillar" data-reveal>
-            <div class="logo-stack"><img src="assets/icons/tech/python.svg" alt="Python"><img src="assets/icons/tech/scikitlearn.svg" alt="scikit-learn"><img src="assets/icons/tech/numpy.svg" alt="NumPy"><img src="assets/icons/tech/pandas.svg" alt="pandas"></div>
-            <h3>Machine Learning</h3>
-            <p>Data preprocessing, phishing email detection and predictive modelling with Python and scikit-learn.</p>
-          </article>
-
-          <article class="bento-card bento-pillar" data-reveal>
-            <div class="logo-stack"><span class="glyph"><svg class="ico"><use href="#i-cpu"/></svg></span></div>
-            <h3>Core Computer Science</h3>
-            <p>Data structures, algorithms, OOP, DBMS, operating systems and computer networks.</p>
-          </article>
+          <div class="about-milestone-card">
+            <span class="milestone-badge">Foundation</span>
+            <div class="milestone-num">8.33</div>
+            <div class="milestone-desc">B.Sc IT CGPA · Centurion University</div>
+          </div>
+          <div class="about-milestone-card">
+            <span class="milestone-badge">Industry Proven</span>
+            <div class="milestone-num">5+</div>
+            <div class="milestone-desc">Full-Stack & ML Core Deployments</div>
+          </div>
+          <div class="about-milestone-card">
+            <span class="milestone-badge">Location</span>
+            <div class="milestone-num"><svg class="ico"><use href="#i-map-pin"/></svg></div>
+            <div class="milestone-desc">Soro, Balasore, Odisha, India</div>
+          </div>
         </div>
       </div>
     </section>
@@ -367,110 +328,140 @@
       </div>
     </section>
 
-    <!-- ── 3. PROJECTS: HORIZONTAL GALLERY (GRAPHITE) ── -->
-    <section class="tile tile-graphite" id="projects">
-      <div class="tile-inner">
-        <header class="tile-head tile-head-row" data-reveal>
-          <div>
-            <h2 class="tile-title">What I’ve built.</h2>
-            <p class="tile-lead">Applications across full-stack engineering, security and web design.</p>
+    <!-- ── 3. EDITORIAL SELECTED WORK SECTION (HIGH-FASHION 2-COL GRID) ── -->
+    <section class="editorial-work-section" id="projects" aria-label="Selected Work">
+      <div class="work-container">
+        
+        <!-- SECTION HEADER (AUDREY FAUSTINA / KOVA STYLE) -->
+        <header class="work-header" data-reveal>
+          <div class="work-title-wrap">
+            <h2 class="work-title">
+              <span>SELECTED</span>
+              <span>WORK</span>
+            </h2>
           </div>
-          <div class="rail-controls">
-            <button class="rail-btn" data-rail="prev" aria-label="Previous projects"><svg class="ico"><use href="#i-arrow-left"/></svg></button>
-            <button class="rail-btn" data-rail="next" aria-label="Next projects"><svg class="ico"><use href="#i-arrow-right"/></svg></button>
+          <div class="work-meta-wrap">
+            <p class="work-lead">
+              A curated collection of selected works showcasing full-stack architectures, robust backend systems, and modern digital applications.
+            </p>
+            <span class="work-index">©26</span>
           </div>
         </header>
-      </div>
 
-      <div class="project-rail" id="projectRail" tabindex="0" aria-label="Projects, scroll sideways">
-        <article class="project-card">
-          <div class="project-media"><img src="assets/images/jobsphere.jpg" alt="Job Sphere recruiter dashboard" loading="lazy"></div>
-          <div class="project-body">
-            <p class="project-kind">Full stack</p>
-            <h3>Job Sphere</h3>
-            <p>A job portal to browse listings, view details and manage applications. Reusable React components with state management, backed by Spring Boot REST services on MySQL.</p>
-            <ul class="tech-list">
-              <li><img src="assets/icons/tech/react.svg" alt="">React</li>
-              <li><img src="assets/icons/tech/spring.svg" alt="">Spring Boot</li>
-              <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
-              <li><img src="assets/icons/tech/mysql.svg" alt="">MySQL</li>
-            </ul>
-            <div class="project-links">
-              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+        <!-- 2-COLUMN EDITORIAL WORK GRID -->
+        <div class="work-grid" data-reveal>
+          
+          <!-- Card 01: Job Sphere -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/jobsphere.jpg" alt="Job Sphere Recruiter Platform" class="work-card-img" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Job Sphere</h3>
+              <p class="work-card-desc">
+                A high-performance job application portal connecting recruiters and talent. Architected with reusable React components and state management, backed by Spring Boot REST APIs and relational MySQL schemas.
+              </p>
+              <ul class="work-card-tech">
+                <li><img src="assets/icons/tech/react.svg" alt="">React</li>
+                <li><img src="assets/icons/tech/spring.svg" alt="">Spring Boot</li>
+                <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
+                <li><img src="assets/icons/tech/mysql.svg" alt="">MySQL</li>
+              </ul>
+              <div class="work-card-actions">
+                <a href="javascript:void(0)" class="work-btn-link">View Project <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work-btn-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-media"><img src="assets/images/security_project.jpg" alt="Secure login system dashboard" loading="lazy"></div>
-          <div class="project-body">
-            <p class="project-kind">Cybersecurity</p>
-            <h3>Secure Login System</h3>
-            <p>Authentication with cryptographic password hashing and strict input validation, built to shut out SQL Injection and safeguard user accounts.</p>
-            <ul class="tech-list">
-              <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
-              <li><img src="assets/icons/tech/mysql.svg" alt="">SQL</li>
-              <li><span class="glyph glyph-sm"><svg class="ico"><use href="#i-shield-check"/></svg></span>Hashing</li>
-            </ul>
-            <div class="project-links">
-              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+          <!-- Card 02: Secure Login System -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/security_project.jpg" alt="Secure Login Authentication System" class="work-card-img" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Secure Login System</h3>
+              <p class="work-card-desc">
+                Zero-trust authentication infrastructure designed to neutralize OWASP vulnerabilities. Employs salted cryptographic hashing (PBKDF2/BCrypt) and parameterized queries to shut down SQL injection attacks.
+              </p>
+              <ul class="work-card-tech">
+                <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
+                <li><img src="assets/icons/tech/mysql.svg" alt="">SQL</li>
+                <li><span class="glyph glyph-sm"><svg class="ico"><use href="#i-shield-check"/></svg></span>Cryptographic Hashing</li>
+              </ul>
+              <div class="work-card-actions">
+                <a href="javascript:void(0)" class="work-btn-link">View Security Audit <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work-btn-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-media"><img src="assets/images/aiml_project.jpg" alt="Password strength analyzer interface" loading="lazy"></div>
-          <div class="project-body">
-            <p class="project-kind">Security utility</p>
-            <h3>Password Strength Analyzer</h3>
-            <p>A Java application that scores password complexity and entropy against security rules, with real-time feedback and tailored recommendations.</p>
-            <ul class="tech-list">
-              <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
-              <li><span class="glyph glyph-sm"><svg class="ico"><use href="#i-shield-check"/></svg></span>Entropy rules</li>
-            </ul>
-            <div class="project-links">
-              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+          <!-- Card 03: Password Strength Analyzer -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/aiml_project.jpg" alt="Password Strength Analyzer" class="work-card-img" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Password Strength Analyzer</h3>
+              <p class="work-card-desc">
+                Real-time cryptographic entropy evaluator. Analyzes string patterns, character space dispersion, and dictionary collision heuristics to provide developers with instant complexity ratings.
+              </p>
+              <ul class="work-card-tech">
+                <li><img src="assets/icons/tech/java.svg" alt="">Java</li>
+                <li><span class="glyph glyph-sm"><svg class="ico"><use href="#i-cpu"/></svg></span>Entropy Algorithms</li>
+              </ul>
+              <div class="work-card-actions">
+                <a href="javascript:void(0)" class="work-btn-link">Explore Utility <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work-btn-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-media"><img src="assets/images/portfolio.jpg" alt="This portfolio's opening screen" loading="lazy"></div>
-          <div class="project-body">
-            <p class="project-kind">Frontend</p>
-            <h3>Portfolio Website</h3>
-            <p>This site: a responsive personal portfolio presenting projects, internships and skills, with fluid animation and cross-device performance.</p>
-            <ul class="tech-list">
-              <li><img src="assets/icons/tech/html5.svg" alt="">HTML5</li>
-              <li><img src="assets/icons/tech/css3.svg" alt="">CSS3</li>
-              <li><img src="assets/icons/tech/javascript.svg" alt="">JavaScript</li>
-            </ul>
-            <div class="project-links">
-              <a href="#home" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+          <!-- Card 04: Editorial Portfolio -->
+          <article class="work-card">
+            <div class="work-card-media">
+              <img src="assets/images/portfolio.jpg" alt="Personal Portfolio Website" class="work-card-img" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Editorial Portfolio</h3>
+              <p class="work-card-desc">
+                Interactive digital portfolio incorporating Three.js celestial particle fields, GSAP pinned scrub interactions, and bespoke responsive poster typography engineered for zero layout shift.
+              </p>
+              <ul class="work-card-tech">
+                <li><img src="assets/icons/tech/javascript.svg" alt="">JavaScript</li>
+                <li><img src="assets/icons/tech/html5.svg" alt="">HTML5</li>
+                <li><img src="assets/icons/tech/css3.svg" alt="">CSS3</li>
+              </ul>
+              <div class="work-card-actions">
+                <a href="#home" class="work-btn-link">Explore Site <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work-btn-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <div class="project-media"><img src="assets/images/restaurant.jpg" alt="Restaurant website shown on a laptop" loading="lazy"></div>
-          <div class="project-body">
-            <p class="project-kind">CMS & web design</p>
-            <h3>Restaurant Website</h3>
-            <p>A restaurant site concept in WordPress and Elementor: clean navigation, an appetising menu showcase and mobile-friendly layouts.</p>
-            <ul class="tech-list">
-              <li><img src="assets/icons/tech/wordpress.svg" alt="">WordPress</li>
-              <li><img src="assets/icons/tech/figma.svg" alt="">UI/UX</li>
-            </ul>
-            <div class="project-links">
-              <a href="javascript:void(0)" class="text-link">View live <svg class="ico"><use href="#i-chevron-right"/></svg></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+          <!-- Card 05: Restaurant Concept Platform (Featured Panoramic Card) -->
+          <article class="work-card work-card-featured">
+            <div class="work-card-media">
+              <img src="assets/images/restaurant.jpg" alt="Restaurant Web Platform" class="work-card-img" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="work-card-body">
+              <h3 class="work-card-title">Culinary Concept Platform</h3>
+              <p class="work-card-desc">
+                Full-featured dining brand experience featuring interactive menu showcases, mobile reservation funnel, and custom Figma visual language translated to an optimized CMS deployment.
+              </p>
+              <ul class="work-card-tech">
+                <li><img src="assets/icons/tech/wordpress.svg" alt="">WordPress</li>
+                <li><img src="assets/icons/tech/figma.svg" alt="">Figma</li>
+                <li><span class="glyph glyph-sm"><svg class="ico"><use href="#i-smartphone"/></svg></span>Responsive UI/UX</li>
+              </ul>
+              <div class="work-card-actions">
+                <a href="javascript:void(0)" class="work-btn-link">View Prototype <svg class="ico"><use href="#i-chevron-right"/></svg></a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="work-btn-link">GitHub <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
@@ -831,6 +822,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <!-- Interactive Scripts -->
-  <script src="script.js"></script>
+  <script src="script.js?v=13"></script>
 </body>
 </html>
+

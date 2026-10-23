@@ -140,15 +140,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  // Sawad Hero Staggered Reveal (the sections below reveal via [data-reveal])
-  const heroTl = gsap.timeline({ defaults: { ease: 'power3.out', duration: 1 } });
+  const hero = document.querySelector('.editorial-hero');
+  const nameFirst = document.getElementById('heroNameFirst');
+  const nameLast = document.getElementById('heroNameLast');
+  const aboutCorner = document.getElementById('heroAboutCorner');
+  const heroImg = document.querySelector('.editorial-hero-img');
 
-  if (document.querySelector('.sawad-hero') && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    heroTl.fromTo('.sawad-portrait-card', { opacity: 0, x: -40, scale: 0.96 }, { opacity: 1, x: 0, scale: 1, duration: 1 })
-      .fromTo('.sawad-title-block', { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.9 }, '-=0.6')
-      .fromTo('.sawad-desc', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, '-=0.5')
-      .fromTo('.sawad-stats-row .sawad-stat-unit', { opacity: 0, y: 25 }, { opacity: 1, y: 0, stagger: 0.12, duration: 0.8 }, '-=0.5')
-      .fromTo('.sawad-cta-row', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, '-=0.5');
+  if (hero && nameFirst && nameLast) {
+    // Function to calculate exact vertical translation for NAINA to dock alongside KAR
+    function getDockDistance() {
+      if (nameLast.offsetTop && nameFirst.offsetTop) {
+        return Math.round(nameLast.offsetTop - nameFirst.offsetTop);
+      }
+      gsap.set(nameFirst, { clearProps: 'y' });
+      return Math.round(nameLast.getBoundingClientRect().top - nameFirst.getBoundingClientRect().top);
+    }
+
+    // Pin hero during scroll scrub:
+    // 1) Bottom-left about text vanishes smoothly as scrolling begins
+    // 2) First name "NAINA" scrolls down into the bottom-left area, docking alongside "KAR"
+    // 3) Stays locked at the bottom during remainder of the pinned hero
+    const heroScrollTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: hero,
+        start: 'top top',
+        end: '+=120%',
+        pin: true,
+        scrub: 0.5,
+        anticipatePin: 1,
+        invalidateOnRefresh: true
+      }
+    });
+
+    // Step 1: The bottom-left about text starts at opacity 1 and vanishes as user scrolls
+    if (aboutCorner) {
+      heroScrollTl.fromTo(aboutCorner, 
+        { opacity: 1, y: 0 },
+        { opacity: 0, y: -30, duration: 0.35, ease: 'power2.out' }, 
+        0
+      );
+    }
+
+    // Step 2: "NAINA" scrolls down to meet "KAR" on the same baseline
+    heroScrollTl.to(nameFirst, {
+      y: () => getDockDistance(),
+      duration: 0.85,
+      ease: 'power1.inOut'
+    }, 0.08);
+
+    // Step 3: Subtle cinematic zoom on the photo
+    if (heroImg) {
+      heroScrollTl.to(heroImg, {
+        scale: 1.06,
+        duration: 1,
+        ease: 'none'
+      }, 0);
+    }
   }
 });
 
@@ -529,3 +576,5 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 
 });
+
+

@@ -7,7 +7,13 @@
     "start": "node server.js",
     "dev": "node server.js"
   },
-  "keywords": ["portfolio", "naina-kar"],
+  "keywords": [
+    "portfolio",
+    "naina-kar"
+  ],
   "author": "Naina Kar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "opentype.js": "^2.0.0"
+  }
 }
