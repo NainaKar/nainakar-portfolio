@@ -24,13 +24,14 @@
   const posArray = new Float32Array(starsCount * 3);
   const colorArray = new Float32Array(starsCount * 3);
 
-  // Mostly neutral starlight with a rare berry star, so pink stays an accent
+  // Starlight palette: Crisp white, neutral silver, with subtle deep wine maroon stars
   const palette = [
     new THREE.Color(0xffffff),
     new THREE.Color(0xf5f5f7),
-    new THREE.Color(0xd2d2d7),
-    new THREE.Color(0x86868b),
-    new THREE.Color(0xe24366)
+    new THREE.Color(0xd4d4d8),
+    new THREE.Color(0xa1a1aa),
+    new THREE.Color(0x800021),
+    new THREE.Color(0x9e1236)
   ];
 
   for (let i = 0; i < starsCount; i++) {
@@ -56,7 +57,7 @@
     const grad = ctx.createRadialGradient(32, 32, 0, 32, 32, 30);
     grad.addColorStop(0, 'rgba(255, 255, 255, 1)');
     grad.addColorStop(0.3, 'rgba(245, 245, 247, 0.7)');
-    grad.addColorStop(0.7, 'rgba(210, 210, 215, 0.25)');
+    grad.addColorStop(0.7, 'rgba(128, 0, 33, 0.25)');
     grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
     ctx.fillStyle = grad;
     ctx.beginPath();
@@ -82,10 +83,10 @@
   // ── Floating Subtle Wireframe Polyhedron ──
   const geoIco = new THREE.IcosahedronGeometry(14, 1);
   const matIco = new THREE.MeshBasicMaterial({
-    color: 0x86868b,
+    color: 0x800021,
     wireframe: true,
     transparent: true,
-    opacity: 0.08
+    opacity: 0.1
   });
   const meshIco = new THREE.Mesh(geoIco, matIco);
   meshIco.position.set(20, -10, -25);
@@ -188,10 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: 'power1.inOut'
     }, 0.08);
 
-    // Step 3: Subtle cinematic zoom on the photo
+    // Step 3: Ultra subtle cinematic shift on the photo without zooming in on face
     if (heroImg) {
       heroScrollTl.to(heroImg, {
-        scale: 1.06,
+        scale: 1.015,
         duration: 1,
         ease: 'none'
       }, 0);
